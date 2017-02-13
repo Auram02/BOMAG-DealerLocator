@@ -29,7 +29,7 @@ WHERE fk_DistributorID IN (
 	INNER JOIN DistributorBranch db on
 		pk_DistributorID = db.fk_MainDistID
 	INNER JOIN DistributorRepresentative dr
-		ON dr.fk_DistributorID = db.fk_MainDistID
+		ON dr.fk_DistributorID = db.fk_BranchDistID  -- Was ON dr.fk_DistributorID = db.fk_BranchDistID 02/13/17
 	WHERE fk_TerritoryRepID = @TerritoryRepID
 )
 GROUP BY StateID, Abbreviation, FullName
