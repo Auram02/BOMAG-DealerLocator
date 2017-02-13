@@ -1,0 +1,5 @@
+C:\Development\Code\Bomag Americas\Dealer Locator\ParameterPasser\bin\Debug\ParameterPasser.dll
+C:\Development\Code\Bomag Americas\Dealer Locator\ParameterPasser\bin\Debug\ParameterPasser.pdb
+C:\Development\Code\Bomag Americas\Dealer Locator\ParameterPasser\obj\Debug\ParameterPasser.csprojResolveAssemblyReference.cache
+C:\Development\Code\Bomag Americas\Dealer Locator\ParameterPasser\obj\Debug\ParameterPasser.dll
+C:\Development\Code\Bomag Americas\Dealer Locator\ParameterPasser\obj\Debug\ParameterPasser.pdb

@@ -1,0 +1,211 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DealerLocator.master.cs"
+    Inherits="Dealer_Locator.DealerLocator" %>
+
+<%@ Register Src="usercontrols/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+<%@ Register Src="usercontrols/Header.ascx" TagName="Header" TagPrefix="uc2" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <asp:substitution id="subCustomText" runat="server" methodname="GetCustomCodeText" />
+    <title>Locate a Dealer</title>
+    <link type="text/css" href="./css/dd.css" rel="stylesheet" />
+    <link type="text/css" href="./css/custom-theme/jquery-ui.custom.css" rel="stylesheet" />
+    <link type="text/css" href="./css/superfish.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="./css/style.css" rel="stylesheet" />
+    <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
+
+    <script type="text/javascript">//Ensures there will be no 'console is undefined' errors
+        window.console = window.console || (function () {
+            var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function () { };
+            return c;
+        })();
+    </script>
+
+    <script type="text/javascript" src="./js/modernizr.js"></script>
+    <script type="text/javascript" src="./js/jquery-current.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/iepngfix_tilebg.js"></script>
+    <script type="text/javascript" src="./js/hoverIntent.js"></script>
+    <script type="text/javascript" src="./js/superfish.js"></script>
+    <script type="text/javascript" src="./Scripts/jquery.bgiframe.min.js"></script>
+    <script type="text/javascript" src="./js/supersubs.js"></script>
+    <script type="text/javascript" src="./js/jquery.dd.min.js"></script>
+
+    <!--<script type="text/javascript" src="/js/jquery.maskedinput-1.2.2.min.js"></script>  // masked inputs -->
+    
+<%--    <script type="text/javascript" src="/js/jquery.corner.js"></script>
+    <script type="text/javascript" src="/js/jqModal.js"></script>--%>
+
+    <script type="text/javascript" src="./js/jqDnR.js"></script>
+    <script type="text/javascript" src="./js/jquery.qtip.min.js" />
+    <script language="javascript" type="text/javascript">
+
+        function IsNumeric(sText) {
+            var ValidChars = "0123456789";
+            var IsNumber = true;
+            var Char;
+
+
+            for (i = 0; i < sText.length && IsNumber == true; i++) {
+                Char = sText.charAt(i);
+                if (ValidChars.indexOf(Char) == -1) {
+                    IsNumber = false;
+                }
+            }
+            return IsNumber;
+
+        }
+
+
+
+
+    </script>
+    <script language="javascript" type="text/javascript">
+
+        $.urlParam = function (name) {
+            var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (!results) { return 0; }
+            return results[1] || 0;
+        }
+
+        $(function () {
+
+            $('#tabs').tabs({
+                load: function (event, ui) {
+                    $('a', ui.panel).click(function () {
+                        $(ui.panel).load(this.href);
+                        return false;
+                    });
+                }
+
+
+            });
+
+            $('#tabs').bind('tabsselect', function (event, ui) {
+                var selectedTab = ui.index;
+                //$("#<%= theHiddenTabIndex1.ClientID %>").val(selectedTab);
+                //$("#<%= theHiddenTabIndex1.ClientID %>").val(selectedTab);
+                PageMethods.SetIndex(selectedTab);
+            });
+
+
+
+        });
+
+        $(document).ready(function () {
+
+            $('#LoadingSymbol').hide();
+            $('#RequiredFieldsNotFilled').hide();
+
+        });
+
+    </script>
+    <%--    <script type="text/javascript">
+        // Google Analytics code
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21379934-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>--%>
+    <link rel="Stylesheet" type="text/css" href="css/main-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+            <Services>
+                <asp:ServiceReference Path="~/Location.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <asp:HiddenField ID="theHiddenTabIndex1" runat="server" />
+        <asp:HiddenField ID="theHiddenTabIndex2" runat="server" />
+
+        &nbsp;<asp:Substitution ID="subHeader" runat="server" MethodName="GetHeader" />
+
+        <header class="Header">
+            <section id="BannerWrapper">
+                <div id="FindBomagLogo">
+                    <img src="images/findbomag.com_logo.png" />
+                </div>
+                <div id="FayatGroupLogo">
+                    <img src="images/bomag_fayat_group_logo.png" />
+                </div>
+            </section>
+            <section class="BlockWrapper">
+                <div class="ColumnWrapper threecol GrayBlock">
+                    <div class="MiddleColumnWrapper YellowBlock">
+                        <div class="LeftColumnWrapper GrayBlock">
+                            <div class="CenterColumn">&nbsp;</div>
+                            <div class="LeftColumn">&nbsp;</div>
+                            <div class="RightColumn">&nbsp;</div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="ColumnWrapper threecol LightGrayBlock">
+            <div class="MiddleColumnWrapper WhiteBlock">
+                <div class="LeftColumnWrapper YellowBlock">
+                    <div class="CenterColumn">
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div class="LeftColumn">
+                </div>
+                <div class="RightColumn">
+                </div>
+            </div>
+        </div>
+        <footer id="Footer" class="GrayBlock">
+            <section id="RightFooter">
+                <a href="http://www.bomag.com/us/en/security.htm">Privacy Statement</a> | <a href="http://www.bomag.com/us/en/terms_conditions.htm">Terms of Service</a>
+                | <a href="http://www.bomag.com/us">Contact Us</a>
+            </section>
+            <section id="LeftFooter">© BOMAG Americas, Inc. - All Rights Reserved</section>
+            
+        </footer>
+        <%--            <div id="pagewidth">
+                <div id="header">
+                    <div id="HeaderContent">
+                    </div>
+                </div>
+                <div id="contentwrapper">
+                    <div id="maincol">
+                        <div id="maincolcontent">
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="FooterContent">
+                        <span id="FooterText"><span>© BOMAG Americas, Inc. - All Rights Reserved</span><span
+                            id="FooterLinks"><a href="#">Privacy Statement</a> | <a href="#">Terms of Service</a>
+                            | <a href="#">Contact Us</a></span></span>
+                    </div>
+                </div>
+            </div>--%>
+        <asp:Substitution ID="subFooter" runat="server" MethodName="GetFooter" />
+        <div id="LoadingSymbol">
+            <img src="/images/spinner.gif" />Submitting...
+        </div>
+        <div id="RequiredFieldsNotFilled">
+            <div>
+                Oops...
+            </div>
+            <div>
+                Please fill in the highlighted required fields before submitting
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>

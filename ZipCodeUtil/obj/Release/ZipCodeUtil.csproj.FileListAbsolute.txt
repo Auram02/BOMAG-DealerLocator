@@ -1,0 +1,5 @@
+C:\Development\Code\Bomag Americas\Dealer Locator\ZipCodeUtil\bin\Release\ZipCodeUtil.dll
+C:\Development\Code\Bomag Americas\Dealer Locator\ZipCodeUtil\bin\Release\ZipCodeUtil.pdb
+C:\Development\Code\Bomag Americas\Dealer Locator\ZipCodeUtil\obj\Release\ZipCodeUtil.csprojResolveAssemblyReference.cache
+C:\Development\Code\Bomag Americas\Dealer Locator\ZipCodeUtil\obj\Release\ZipCodeUtil.dll
+C:\Development\Code\Bomag Americas\Dealer Locator\ZipCodeUtil\obj\Release\ZipCodeUtil.pdb

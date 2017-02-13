@@ -1,0 +1,52 @@
+﻿/*START*/
+ 
+/*Style for menuContainer*/
+#targetMenu{ 
+width:448px; 
+height:128px; /*max height depend of max size icon (mouseOver) and size of navActive Background.
+                Here no activeNav => ex: 128px+0px = 128px */
+margin:0 auto;
+background-image:url(../img/bgMenu.png);
+background-repeat:repeat-x;
+background-position:0 bottom;
+}
+ 
+/*Style Hack IE7*/
+#targetMenu li{
+*float:left; /*IE 7 Hack with Float + Margin-Top */
+}
+ 
+/*Style for link Active icon*/
+#targetMenu li.navActive a{
+background-image:url(../img/navActive.png);
+background-repeat:no-repeat;
+background-position:center bottom;
+}
+ 
+/*Style for link icon*/
+#targetMenu li a{
+position:relative;
+display:block;
+float:left;
+width:64px; /* size of the icon when mouse is out */
+height:64px; /* size of the icon when mouse is out */
+margin-top:64px; /*result of (iconSize_Over - iconSize_Out) => ex : 128px - 64px = 64px*/
+text-decoration:none;
+}
+ 
+/*Style for icon*/
+#targetMenu li a img{ width:100%;}
+ 
+/*Style for tips*/
+#targetMenu li span.tips{ 
+position: absolute;
+display:block;
+top:10px; left:70px;
+padding:5px;
+background-color:#F0F0F0;
+color:#448ab0; 
+text-decoration:none;
+font-weight:bold;
+}
+ 
+/*END*/

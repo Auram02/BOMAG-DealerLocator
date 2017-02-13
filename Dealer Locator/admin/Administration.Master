@@ -1,0 +1,390 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administration.master.cs"
+    Inherits="Dealer_Locator.admin.Administration" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dealer Locator Admin</title>
+    <link rel="Stylesheet" type="text/css" href="/admin/Styles/Base.css" />
+    <link type="text/css" href="/css/custom-theme/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+    <link type="text/css" href="/css/superfish.css" media="screen" rel="stylesheet" />
+    <script type="text/javascript">        //Ensures there will be no 'console is undefined' errors
+        window.console = window.console || (function () {
+            var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function () { };
+            return c;
+        })();
+    </script>
+    <script type="text/javascript" src="/js/jquery-current.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/js/hoverIntent.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.bgiframe.min.js"></script>
+    <script type="text/javascript" src="/js/supersubs.js"></script>
+    <script type="text/javascript" src="/js/superfish.js"></script>
+    <%--<script type="text/javascript" src="/js/jquery.corner.js"></script>--%>
+    <script language="javascript" type="text/javascript">
+
+        $(function () {
+
+            $('#tabs').tabs({
+                load: function (event, ui) {
+                    $('a', ui.panel).click(function () {
+                        $(ui.panel).load(this.href);
+                        return false;
+                    });
+                }
+
+            });
+
+            $('#tabs').bind('tabsselect', function (event, ui) {
+                var selectedTab = ui.index;
+                //$("#<%= theHiddenTabIndex1.ClientID %>").val(selectedTab);
+                //$("#<%= theHiddenTabIndex1.ClientID %>").val(selectedTab);
+                PageMethods.SetIndex(selectedTab);
+            });
+
+
+        });
+
+
+
+
+        $(function () {
+
+            $('#tabs2').tabs({
+                load: function (event, ui) {
+                    $('a', ui.panel).click(function () {
+                        $(ui.panel).load(this.href);
+                        return false;
+                    });
+                }
+
+            });
+
+            $('#tabs2').bind('tabsselect', function (event, ui) {
+                var selectedTab = ui.index;
+                //$("#<%= theHiddenTabIndex2.ClientID %>").val(selectedTab);
+                PageMethods.SetIndex2(selectedTab);
+            });
+
+        });
+
+
+        $(function () {
+
+            $('#tabs3').tabs({
+                load: function (event, ui) {
+                    $('a', ui.panel).click(function () {
+                        $(ui.panel).load(this.href);
+                        return false;
+                    });
+                }
+
+            });
+
+            $('#tabs3').bind('tabsselect', function (event, ui) {
+                var selectedTab = ui.index;
+                //$("#<%= theHiddenTabIndex2.ClientID %>").val(selectedTab);
+                PageMethods.SetIndex3(selectedTab);
+            });
+
+        });
+
+
+
+
+
+    </script>
+    <script type="text/javascript">
+
+        function ActivateTabs(tabId, hiddenFieldValue) {
+            $('#' + tabId).tabs({
+                active: $('#' + hiddenFieldValue).val(),
+                activate: function () {
+                    var selectedTab = $('#' + tabId).tabs('option', 'active');
+                    $("#" + hiddenFieldValue).val(selectedTab);
+                }
+            });
+
+        }
+
+
+        $(function () {
+
+
+            $("#<%= accordion_admin.ClientID %>").accordion({
+                collapsible: true
+            });
+            $("#<%= accordion_admin.ClientID %>").accordion("option", "icons", false);
+            $("#<%= accordion_admin.ClientID %>").accordion({ header: ".AccordionHeading" });
+
+            $("#<%= accordion_TM.ClientID %>").accordion({
+                collapsible: true
+            });
+            $("#<%= accordion_TM.ClientID %>").accordion("option", "icons", false);
+            $("#<%= accordion_TM.ClientID %>").accordion({ header: ".AccordionHeading" });
+
+
+
+            //$('#HeaderDiv').corner("top 10px");
+
+
+            // Dialog			
+            $('#dialog').dialog({
+                autoOpen: false,
+                width: 600,
+                buttons: {
+                    "Ok": function () {
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            // Dialog Link
+            $('#dialog_link').click(function () {
+                $('#dialog').dialog('open');
+                return false;
+            });
+
+            // Datepicker
+            $('#datepicker').datepicker({
+                inline: true
+            });
+
+            // Slider
+            $('#slider').slider({
+                range: true,
+                values: [17, 67]
+            });
+
+            // Progressbar
+            $("#progressbar").progressbar({
+                value: 20
+            });
+
+            //hover states on the static widgets
+            $('#dialog_link, ul#icons li').hover(
+					function () { $(this).addClass('ui-state-hover'); },
+					function () { $(this).removeClass('ui-state-hover'); }
+				);
+
+        });
+
+        $(document).ready(function () {
+            $("ul.sf-menu").supersubs({
+                minWidth: 12,   // minimum width of sub-menus in em units
+                maxWidth: 27,   // maximum width of sub-menus in em units
+                extraWidth: 1     // extra width can ensure lines don't sometimes turn over
+                // due to slight rounding differences and font-family
+            }).superfish();  // call supersubs first, then superfish, so that subs are
+            // not display:none when measuring. Call before initialising
+            // containing tabs for same reason.
+        });
+
+        $(document).ready(function () {
+            $("ul.sf-menu").superfish().find('ul').bgIframe({ opacity: false });
+        });
+    </script>
+    <style type="text/css">
+        /*demo page css*/
+        body
+        {
+            font: 62.5% "Trebuchet MS" , sans-serif;
+        }
+        
+        .demoHeaders
+        {
+            margin-top: 2em;
+        }
+        
+        #dialog_link
+        {
+            padding: .4em 1em .4em 20px;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        #dialog_link span.ui-icon
+        {
+            margin: 0 5px 0 0;
+            position: absolute;
+            left: .2em;
+            top: 50%;
+            margin-top: -8px;
+        }
+        
+        ul#icons
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul#icons li
+        {
+            margin: 2px;
+            position: relative;
+            padding: 4px 0;
+            cursor: pointer;
+            float: left;
+            list-style: none;
+        }
+        
+        ul#icons span.ui-icon
+        {
+            float: left;
+            margin: 0 4px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data" class="AdminForm">
+    <asp:HiddenField ID="hdnSelectedTabDistributor" runat="server" />
+    <asp:HiddenField ID="theHiddenTabIndex1" runat="server" />
+    <asp:HiddenField ID="theHiddenTabIndex2" runat="server" />
+    <asp:HiddenField ID="theHiddenTabIndex3" runat="server" />
+    <asp:HiddenField ID="TerritoryRepHiddenField" runat="server" />
+    <div>
+        <div>
+            <div id="HeaderDiv" class="Header">
+                <img src="/admin/Images/findbomag-art-logo.png" alt="Dealer Locator" />
+            </div>
+        </div>
+        <div id="ContentWrapperDiv" class="ContentWrapper">
+            <div class="TopMenu">
+                <ul id="sample-menu-5" class="sf-menu">
+                    <li class="current"><a class="sf-with-ul" href="/admin/Administration/User.aspx">My
+                        Account</a>
+                        <!-- <ul>
+                                <li><a href="#aa">Manage Account</a> </li>
+                               <li class="current"><a class="sf-with-ul" href="#ab">Distributor Setup<span class="sf-sub-indicator">
+                                    &#187;</span></a>
+                                    <ul>
+                                        <li class="current"><a href="#">menu item that is even longer still!</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>-->
+                    </li>
+                    <li><a href="/admin/Logout.aspx">Log Out</a> </li>
+                </ul>
+            </div>
+            <div class="colleft">
+                <div id="ContentSectionDiv" class="ContentSection">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+                    </asp:ScriptManager>
+                    <div id="SubHeader" class="SubHeader">
+                        <div id="BreadCrumbs" class="BreadCrumbs">
+                            Breadcrumbs
+                        </div>
+                        <div id="SearchDiv" class="SearchDiv">
+                            Search
+                        </div>
+                        <div id="SubHeaderSpacer" class="SubHeaderSpacer">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="MainContent">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div id="LinkSectionDiv" class="LinkSection">
+                    <div id="accordion_admin" class="accordion_admin" runat="server">
+                        <div class="AccordionHeading">
+                            <a href="#Admin">Administration</a>
+                        </div>
+                        <div>
+                            <div class="AdminLink" id="AccountSetupDiv" runat="server">
+                                <a href="/admin/Administration/UsersGrouping.aspx">User Accounts</a>
+                            </div>
+                            <div class="AdminLink" id="DistributionSetupDiv" runat="server">
+                                <a href="/admin/Administration/DistributionGrouping.aspx">Distribution Setup</a>
+                            </div>
+                            <div class="AdminLink" id="FormsDiv" runat="server">
+                                <a href="/admin/FormDevelopment/FormsGrouping.aspx">Forms</a>
+                            </div>
+                            <div class="AdminLink" id="ModelsDiv" runat="server">
+                                <a href="/admin/FormDevelopment/ModelsGrouping.aspx">Models</a>
+                            </div>
+                        </div>
+                        <div class="AccordionHeading">
+                            <a href="#Lead">Manage Data</a>
+                        </div>
+                        <div>
+                            <div id="DataImportExportDiv" class="AdminLink" runat="server">
+                                <a href="/admin/DataImportExport.aspx">Data Import / Export</a>
+                            </div>
+                        </div>
+                        <div class="AccordionHeading">
+                            <a href="#">Tools</a>
+                        </div>
+                        <div>
+                            <div class="AdminLink" id="ReportsDiv" runat="server">
+                                <a href="/admin/Reports/ReportsList.aspx">Reports</a>
+                            </div>
+                            <div class="AdminLink" id="FaxBulletinsDiv" runat="server">
+                                <a href="/admin/Reports/FaxBulletin.aspx">Fax Bulletins</a>
+                            </div>
+                            <div class="AdminLink" id="LatLongDiv" runat="server">
+                                <a href="/admin/Reports/LatLongReport.aspx">Lat / Long Lookup</a>
+                            </div>
+                        </div>
+                        <div class="AccordionHeading">
+                            <a href="#">Manage Leads</a>
+                        </div>
+                        <div>
+                            <div id="Div1" class="AdminLink" runat="server">
+                                <a href="/admin/DesktopLead/BulkLeadImport.aspx">Bulk Lead Import</a>
+                            </div>
+                            <div id="BlockUserCompanyDiv" class="AdminLink" runat="server">
+                                <a href="/admin/DesktopLead/BlockUserCompany.aspx">Block User / Company</a>
+                            </div>
+                            <div id="ModifyDeleteLeadDiv" class="AdminLink" runat="server">
+                                <a href="/admin/DesktopLead/ModifyDeleteLeadGrouping.aspx">Modify / Delete Lead</a>
+                            </div>
+                        </div>
+                        <div class="AccordionHeading">
+                            <a href="#">Manage Desktop</a>
+                        </div>
+                        <div>
+                            <div id="ManageDesktopSetupDiv" class="AdminLink" runat="server">
+                                <a href="/admin/ManageDesktopSetup.aspx">Setup</a>
+                            </div>
+                            <div id="ProcessLeadsDiv" class="AdminLink" runat="server">
+                                <a href="/admin/ProcessLeads.aspx">Process Leads</a>
+                            </div>
+                        </div>
+                        <div class="AccordionHeading">
+                            <a href="#">TM Reports</a>
+                        </div>
+                        <div>
+                            <div id="TMReportsDiv" class="AdminLink" runat="server">
+                                <a href="/admin/Reports/TMReportsDashboard.aspx">TM Reports</a>
+                            </div>
+                            <div id="TMMapReportsDiv" class="AdminLink" runat="server">
+                                <a href="/admin/Reports/TerritoryMapReport.aspx">Map Reports</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion_TM" class="accordion_TM" runat="server">
+                        <div class="AccordionHeading">
+                            <a href="#">TM Reports</a>
+                        </div>
+                        <div>
+                            <div id="Div16" class="AdminLink" runat="server">
+                                <a href="/admin/Reports/TMReportsDashboard.aspx">TM Reports</a>
+                            </div>
+                            <div id="Div17" class="AdminLink" runat="server">
+                                <a href="/admin/Reports/TerritoryMapReport.aspx">Map Reports</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

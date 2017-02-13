@@ -1,0 +1,2242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dealer_Locator</RootNamespace>
+    <AssemblyName>Dealer Locator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10123.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Development\References\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="eWorld.UI, Version=2.0.5.2356, Culture=neutral, PublicKeyToken=24d65337282035f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Development\References\eWorld.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.4.2.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework.tests, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Administration.Master.cs">
+      <DependentUpon>Administration.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration.Master.designer.cs">
+      <DependentUpon>Administration.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\DefaultSalesLeadControl.ascx.cs">
+      <DependentUpon>DefaultSalesLeadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\DefaultSalesLeadControl.ascx.designer.cs">
+      <DependentUpon>DefaultSalesLeadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\DefaultSalesLeadForm.aspx.cs">
+      <DependentUpon>DefaultSalesLeadForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\DefaultSalesLeadForm.aspx.designer.cs">
+      <DependentUpon>DefaultSalesLeadForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\DistributionGrouping.aspx.cs">
+      <DependentUpon>DistributionGrouping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\DistributionGrouping.aspx.designer.cs">
+      <DependentUpon>DistributionGrouping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\DoNotPlanToBuyControl.ascx.cs">
+      <DependentUpon>DoNotPlanToBuyControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\DoNotPlanToBuyControl.ascx.designer.cs">
+      <DependentUpon>DoNotPlanToBuyControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\DoNotPlanToBuySetup.aspx.cs">
+      <DependentUpon>DoNotPlanToBuySetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\DoNotPlanToBuySetup.aspx.designer.cs">
+      <DependentUpon>DoNotPlanToBuySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\ElectronicDistributionControl.ascx.cs">
+      <DependentUpon>ElectronicDistributionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\ElectronicDistributionControl.ascx.designer.cs">
+      <DependentUpon>ElectronicDistributionControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\Groups.aspx.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\Groups.aspx.designer.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\GroupsControl.ascx.cs">
+      <DependentUpon>GroupsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\GroupsControl.ascx.designer.cs">
+      <DependentUpon>GroupsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\EmailControl.ascx.cs">
+      <DependentUpon>EmailControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\EmailControl.ascx.designer.cs">
+      <DependentUpon>EmailControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\RentalAdministratorEmailControl.ascx.cs">
+      <DependentUpon>RentalAdministratorEmailControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\RentalAdministratorEmailControl.ascx.designer.cs">
+      <DependentUpon>RentalAdministratorEmailControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\LeadLetterEditorControl.ascx.cs">
+      <DependentUpon>LeadLetterEditorControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\LeadLetterEditorControl.ascx.designer.cs">
+      <DependentUpon>LeadLetterEditorControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\LocationsControl.ascx.cs">
+      <DependentUpon>LocationsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\LocationsControl.ascx.designer.cs">
+      <DependentUpon>LocationsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ReportGeneration\DA\Report_da.cs" />
+    <Compile Include="admin\Reports\ReportGeneration\Reports.cs" />
+    <Compile Include="admin\Reports\ReportHandler.ashx.cs">
+      <DependentUpon>ReportHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryMapReport.aspx.cs">
+      <DependentUpon>TerritoryMapReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryMapReport.aspx.designer.cs">
+      <DependentUpon>TerritoryMapReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryMapReportControl.ascx.cs">
+      <DependentUpon>TerritoryMapReportControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryMapReportControl.ascx.designer.cs">
+      <DependentUpon>TerritoryMapReportControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataExport\ExcelDownload.ascx.cs">
+      <DependentUpon>ExcelDownload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataExport\ExcelDownload.ascx.designer.cs">
+      <DependentUpon>ExcelDownload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataExport\ExportGrouping.ascx.cs">
+      <DependentUpon>ExportGrouping.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataExport\ExportGrouping.ascx.designer.cs">
+      <DependentUpon>ExportGrouping.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataExport\ExportUnsentLeads.ascx.cs">
+      <DependentUpon>ExportUnsentLeads.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataExport\ExportUnsentLeads.ascx.designer.cs">
+      <DependentUpon>ExportUnsentLeads.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataImport\ImportDealerInformation.ascx.cs">
+      <DependentUpon>ImportDealerInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataImport\ImportDealerInformation.ascx.designer.cs">
+      <DependentUpon>ImportDealerInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataImport\ImportGrouping.ascx.cs">
+      <DependentUpon>ImportGrouping.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataImport\ImportGrouping.ascx.designer.cs">
+      <DependentUpon>ImportGrouping.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataImport\ImportSalesLeadInformationControl.ascx.cs">
+      <DependentUpon>ImportSalesLeadInformationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataImport\ImportSalesLeadInformationControl.ascx.designer.cs">
+      <DependentUpon>ImportSalesLeadInformationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataImport\ZipCodeImport.ascx.cs">
+      <DependentUpon>ZipCodeImport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataImport\ZipCodeImport.ascx.designer.cs">
+      <DependentUpon>ZipCodeImport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\BulkLeadImport.aspx.cs">
+      <DependentUpon>BulkLeadImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\BulkLeadImport.aspx.designer.cs">
+      <DependentUpon>BulkLeadImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\DeleteLead.ascx.cs">
+      <DependentUpon>DeleteLead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\DeleteLead.ascx.designer.cs">
+      <DependentUpon>DeleteLead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\MapFieldsControl.ascx.cs">
+      <DependentUpon>MapFieldsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\MapFieldsControl.ascx.designer.cs">
+      <DependentUpon>MapFieldsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\ModifyDeleteLeadGrouping.aspx.cs">
+      <DependentUpon>ModifyDeleteLeadGrouping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\ModifyDeleteLeadGrouping.aspx.designer.cs">
+      <DependentUpon>ModifyDeleteLeadGrouping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\ModifyLeadData.aspx.cs">
+      <DependentUpon>ModifyLeadData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\ModifyLeadData.aspx.designer.cs">
+      <DependentUpon>ModifyLeadData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\ModifyLeadSearch.ascx.cs">
+      <DependentUpon>ModifyLeadSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\ModifyLeadSearch.ascx.designer.cs">
+      <DependentUpon>ModifyLeadSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\PushLeadsManually.ascx.cs">
+      <DependentUpon>PushLeadsManually.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\PushLeadsManually.ascx.designer.cs">
+      <DependentUpon>PushLeadsManually.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\SyncWithWebDatabase.ascx.cs">
+      <DependentUpon>SyncWithWebDatabase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\SyncWithWebDatabase.ascx.designer.cs">
+      <DependentUpon>SyncWithWebDatabase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\TransferLeads.ascx.cs">
+      <DependentUpon>TransferLeads.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\TransferLeads.ascx.designer.cs">
+      <DependentUpon>TransferLeads.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\TransferPendingLeads.ascx.cs">
+      <DependentUpon>TransferPendingLeads.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\TransferPendingLeads.ascx.designer.cs">
+      <DependentUpon>TransferPendingLeads.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DLAdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\AddModifyModelControl.ascx.cs">
+      <DependentUpon>AddModifyModelControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\AddModifyModelControl.ascx.designer.cs">
+      <DependentUpon>AddModifyModelControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ManageCategoriesControl.ascx.cs">
+      <DependentUpon>ManageCategoriesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ManageCategoriesControl.ascx.designer.cs">
+      <DependentUpon>ManageCategoriesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ManageModelsControl.ascx.cs">
+      <DependentUpon>ManageModelsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ManageModelsControl.ascx.designer.cs">
+      <DependentUpon>ManageModelsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\PhysicalDistributionControl.ascx.cs">
+      <DependentUpon>PhysicalDistributionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\PhysicalDistributionControl.ascx.designer.cs">
+      <DependentUpon>PhysicalDistributionControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\RegionManagement.aspx.cs">
+      <DependentUpon>RegionManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\RegionManagement.aspx.designer.cs">
+      <DependentUpon>RegionManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\MainCategoryDockImageManagerControl.ascx.cs">
+      <DependentUpon>MainCategoryDockImageManagerControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\MainCategoryDockImageManagerControl.ascx.designer.cs">
+      <DependentUpon>MainCategoryDockImageManagerControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReAssign\ReassignModelControl.ascx.cs">
+      <DependentUpon>ReassignModelControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReAssign\ReassignModelControl.ascx.designer.cs">
+      <DependentUpon>ReassignModelControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderModelsControl.ascx.cs">
+      <DependentUpon>ReorderModelsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderModelsControl.ascx.designer.cs">
+      <DependentUpon>ReorderModelsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderMainCategoriesControl.ascx.cs">
+      <DependentUpon>ReorderMainCategoriesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderMainCategoriesControl.ascx.designer.cs">
+      <DependentUpon>ReorderMainCategoriesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\RepMap.aspx.cs">
+      <DependentUpon>RepMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\RepMap.aspx.designer.cs">
+      <DependentUpon>RepMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\RepMapControl.ascx.cs">
+      <DependentUpon>RepMapControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\RepMapControl.ascx.designer.cs">
+      <DependentUpon>RepMapControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\SalesLeadVendorEmailEditor.aspx.cs">
+      <DependentUpon>SalesLeadVendorEmailEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\SalesLeadVendorEmailEditor.aspx.designer.cs">
+      <DependentUpon>SalesLeadVendorEmailEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\SUControlPanel.aspx.cs">
+      <DependentUpon>SUControlPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\SUControlPanel.aspx.designer.cs">
+      <DependentUpon>SUControlPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\UsersControl.ascx.cs">
+      <DependentUpon>UsersControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\UsersControl.ascx.designer.cs">
+      <DependentUpon>UsersControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\UsersGrouping.aspx.cs">
+      <DependentUpon>UsersGrouping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\UsersGrouping.aspx.designer.cs">
+      <DependentUpon>UsersGrouping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Administration\Vendor.aspx.cs">
+      <DependentUpon>Vendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Administration\Vendor.aspx.designer.cs">
+      <DependentUpon>Vendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DataImportExport.aspx.cs">
+      <DependentUpon>DataImportExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DataImportExport.aspx.designer.cs">
+      <DependentUpon>DataImportExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DesktopLead\BlockUserCompany.aspx.cs">
+      <DependentUpon>BlockUserCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DesktopLead\BlockUserCompany.aspx.designer.cs">
+      <DependentUpon>BlockUserCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\CopyFormControl.ascx.cs">
+      <DependentUpon>CopyFormControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\CopyFormControl.ascx.designer.cs">
+      <DependentUpon>CopyFormControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\DashboardCategories.aspx.cs">
+      <DependentUpon>DashboardCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\DashboardCategories.aspx.designer.cs">
+      <DependentUpon>DashboardCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\FormElements.aspx.cs">
+      <DependentUpon>FormElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\FormElements.aspx.designer.cs">
+      <DependentUpon>FormElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\FormTemplateControl.ascx.cs">
+      <DependentUpon>FormTemplateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\FormTemplateControl.ascx.designer.cs">
+      <DependentUpon>FormTemplateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\GenerateFormUrls.aspx.cs">
+      <DependentUpon>GenerateFormUrls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\GenerateFormUrls.aspx.designer.cs">
+      <DependentUpon>GenerateFormUrls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\HeaderFooter.aspx.cs">
+      <DependentUpon>HeaderFooter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\HeaderFooter.aspx.designer.cs">
+      <DependentUpon>HeaderFooter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ProductModels.aspx.cs">
+      <DependentUpon>ProductModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ProductModels.aspx.designer.cs">
+      <DependentUpon>ProductModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReAssign\ReassignModels.aspx.cs">
+      <DependentUpon>ReassignModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReAssign\ReassignModels.aspx.designer.cs">
+      <DependentUpon>ReassignModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderElementValues.aspx.cs">
+      <DependentUpon>ReorderElementValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderElementValues.aspx.designer.cs">
+      <DependentUpon>ReorderElementValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderFormElements.aspx.cs">
+      <DependentUpon>ReorderFormElements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderFormElements.aspx.designer.cs">
+      <DependentUpon>ReorderFormElements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderMainCategories.aspx.cs">
+      <DependentUpon>ReorderMainCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderMainCategories.aspx.designer.cs">
+      <DependentUpon>ReorderMainCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderProductModels.aspx.cs">
+      <DependentUpon>ReorderProductModels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderProductModels.aspx.designer.cs">
+      <DependentUpon>ReorderProductModels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderSubCategories.aspx.cs">
+      <DependentUpon>ReorderSubCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderSubCategories.aspx.designer.cs">
+      <DependentUpon>ReorderSubCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderSubCategoriesControl.ascx.cs">
+      <DependentUpon>ReorderSubCategoriesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ReOrder\ReorderSubCategoriesControl.ascx.designer.cs">
+      <DependentUpon>ReorderSubCategoriesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\SubCategoriesControl.ascx.cs">
+      <DependentUpon>SubCategoriesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\SubCategoriesControl.ascx.designer.cs">
+      <DependentUpon>SubCategoriesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ThanksURL.aspx.cs">
+      <DependentUpon>ThanksURL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ThanksURL.aspx.designer.cs">
+      <DependentUpon>ThanksURL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\FormsGrouping.aspx.cs">
+      <DependentUpon>FormsGrouping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\FormsGrouping.aspx.designer.cs">
+      <DependentUpon>FormsGrouping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ManageDesktopSetup.aspx.cs">
+      <DependentUpon>ManageDesktopSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ManageDesktopSetup.aspx.designer.cs">
+      <DependentUpon>ManageDesktopSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Models.aspx.cs">
+      <DependentUpon>Models.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Models.aspx.designer.cs">
+      <DependentUpon>Models.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ModelsGrouping.aspx.cs">
+      <DependentUpon>ModelsGrouping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FormDevelopment\ModelsGrouping.aspx.designer.cs">
+      <DependentUpon>ModelsGrouping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ModifyDeleteLead.aspx.cs">
+      <DependentUpon>ModifyDeleteLead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ModifyDeleteLead.aspx.designer.cs">
+      <DependentUpon>ModifyDeleteLead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ProcessLeads.aspx.cs">
+      <DependentUpon>ProcessLeads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ProcessLeads.aspx.designer.cs">
+      <DependentUpon>ProcessLeads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ErrorReportsGrouping.ascx.cs">
+      <DependentUpon>ErrorReportsGrouping.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ErrorReportsGrouping.ascx.designer.cs">
+      <DependentUpon>ErrorReportsGrouping.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\IncorrectDistributorCityReport.ascx.cs">
+      <DependentUpon>IncorrectDistributorCityReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\IncorrectDistributorCityReport.ascx.designer.cs">
+      <DependentUpon>IncorrectDistributorCityReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\IncorrectDistributorZipReport.ascx.cs">
+      <DependentUpon>IncorrectDistributorZipReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\IncorrectDistributorZipReport.ascx.designer.cs">
+      <DependentUpon>IncorrectDistributorZipReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\LeadSubmissionErrorsReport.ascx.cs">
+      <DependentUpon>LeadSubmissionErrorsReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\LeadSubmissionErrorsReport.ascx.designer.cs">
+      <DependentUpon>LeadSubmissionErrorsReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\MapReport.aspx.cs">
+      <DependentUpon>MapReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\MapReport.aspx.designer.cs">
+      <DependentUpon>MapReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ReportsList.aspx.cs">
+      <DependentUpon>ReportsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ReportsList.aspx.designer.cs">
+      <DependentUpon>ReportsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\BySourceReport.ascx.cs">
+      <DependentUpon>BySourceReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\BySourceReport.ascx.designer.cs">
+      <DependentUpon>BySourceReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\CreateExcelReport.aspx.cs">
+      <DependentUpon>CreateExcelReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\CreateExcelReport.aspx.designer.cs">
+      <DependentUpon>CreateExcelReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\emailTemplate.ascx.cs">
+      <DependentUpon>emailTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\emailTemplate.ascx.designer.cs">
+      <DependentUpon>emailTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\FaxBulletin.aspx.cs">
+      <DependentUpon>FaxBulletin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\FaxBulletin.aspx.designer.cs">
+      <DependentUpon>FaxBulletin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\GeneralTMReport.ascx.cs">
+      <DependentUpon>GeneralTMReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\GeneralTMReport.ascx.designer.cs">
+      <DependentUpon>GeneralTMReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\LatLongReport.aspx.cs">
+      <DependentUpon>LatLongReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\LatLongReport.aspx.designer.cs">
+      <DependentUpon>LatLongReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\LeadList.ascx.cs">
+      <DependentUpon>LeadList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\LeadList.ascx.designer.cs">
+      <DependentUpon>LeadList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\MarkAsFixed.aspx.cs">
+      <DependentUpon>MarkAsFixed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\MarkAsFixed.aspx.designer.cs">
+      <DependentUpon>MarkAsFixed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\PendingLeadsListReport.ascx.cs">
+      <DependentUpon>PendingLeadsListReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\PendingLeadsListReport.ascx.designer.cs">
+      <DependentUpon>PendingLeadsListReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\SelectYear.ascx.cs">
+      <DependentUpon>SelectYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\SelectYear.ascx.designer.cs">
+      <DependentUpon>SelectYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryManagerLeadsByDealer.aspx.cs">
+      <DependentUpon>TerritoryManagerLeadsByDealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryManagerLeadsByDealer.aspx.designer.cs">
+      <DependentUpon>TerritoryManagerLeadsByDealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryManagerReport.aspx.cs">
+      <DependentUpon>TerritoryManagerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TerritoryManagerReport.aspx.designer.cs">
+      <DependentUpon>TerritoryManagerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\TMReportPasser.aspx.cs">
+      <DependentUpon>TMReportPasser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TMReportPasser.aspx.designer.cs">
+      <DependentUpon>TMReportPasser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\TMReportsDashboard.aspx.cs">
+      <DependentUpon>TMReportsDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\TMReportsDashboard.aspx.designer.cs">
+      <DependentUpon>TMReportsDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ViewErrorEmail.aspx.cs">
+      <DependentUpon>ViewErrorEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ViewErrorEmail.aspx.designer.cs">
+      <DependentUpon>ViewErrorEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ViewErrorEmailListing.aspx.cs">
+      <DependentUpon>ViewErrorEmailListing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ViewErrorEmailListing.aspx.designer.cs">
+      <DependentUpon>ViewErrorEmailListing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ViewLead.aspx.cs">
+      <DependentUpon>ViewLead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ViewLead.aspx.designer.cs">
+      <DependentUpon>ViewLead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Reports\ViewLeadList.aspx.cs">
+      <DependentUpon>ViewLeadList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Reports\ViewLeadList.aspx.designer.cs">
+      <DependentUpon>ViewLeadList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\WebServices\LeadSender.asmx.cs">
+      <DependentUpon>LeadSender.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="admin\WebServices\MapReportService.asmx.cs">
+      <DependentUpon>MapReportService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BR\ColorGenerator.cs" />
+    <Compile Include="BR\DistributorLookup.cs" />
+    <Compile Include="BR\ExcelReport.cs" />
+    <Compile Include="BR\Fax.cs" />
+    <Compile Include="BR\HSLColorClass.cs" />
+    <Compile Include="BR\ImageVerification.cs" />
+    <Compile Include="BR\Lead.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BR\LeadExcelReport.cs" />
+    <Compile Include="BR\Mapping.cs" />
+    <Compile Include="BR\MapReport.cs" />
+    <Compile Include="BR\ModelList.cs" />
+    <Compile Include="BR\SalesLeadImport.cs" />
+    <Compile Include="BR\SalesLeadTemplates.cs" />
+    <Compile Include="BR\Utility.cs" />
+    <Compile Include="CaptchaImage.cs" />
+    <Compile Include="CityStateSearch.ashx.cs">
+      <DependentUpon>CityStateSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DA\ContractTDS.Designer.cs">
+      <DependentUpon>ContractTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\CSV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\DataAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\DataImport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\Debug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\ElementValueTDS.Designer.cs">
+      <DependentUpon>ElementValueTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\EmailTemplate.Designer.cs">
+      <DependentUpon>EmailTemplate.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\FieldElementTypeTDS.Designer.cs">
+      <DependentUpon>FieldElementTypeTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\FormElementTDS.Designer.cs">
+      <DependentUpon>FormElementTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\GroupdTDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DA\GroupdTDS.Designer.cs">
+      <DependentUpon>GroupdTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\HeaderFooter.Designer.cs">
+      <DependentUpon>HeaderFooter.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\LeadBlackList.cs" />
+    <Compile Include="DA\Leads.Designer.cs">
+      <DependentUpon>Leads.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\LeadsTDS.Designer.cs">
+      <DependentUpon>LeadsTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\MainCategoryTDS.Designer.cs">
+      <DependentUpon>MainCategoryTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BR\MapGroup.cs" />
+    <Compile Include="DA\MapReport.cs" />
+    <Compile Include="DA\MapTDS.Designer.cs">
+      <DependentUpon>MapTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\ModelTDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DA\ModelTDS.Designer.cs">
+      <DependentUpon>ModelTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\Region.cs">
+      <DependentUpon>Region.xsd</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\Region.Designer.cs">
+      <DependentUpon>Region.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\RepMapping.Designer.cs">
+      <DependentUpon>RepMapping.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\Reports.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\SalesLeadFormTDS.Designer.cs">
+      <DependentUpon>SalesLeadFormTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\SplitCounty.Designer.cs">
+      <DependentUpon>SplitCounty.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\State.Designer.cs">
+      <DependentUpon>State.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\SubCategoryTDS2.Designer.cs">
+      <DependentUpon>SubCategoryTDS2.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\UserDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DA\UserTDS.Designer.cs">
+      <DependentUpon>UserTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\VendorTDS.Designer.cs">
+      <DependentUpon>VendorTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DA\ZipLookupTDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DA\ZipLookupTDS.Designer.cs">
+      <DependentUpon>ZipLookupTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DDA_Classes\DataAccess\Category_da.cs" />
+    <Compile Include="DDA_Classes\DataAccess\Config.cs" />
+    <Compile Include="DDA_Classes\DataAccess\Contract_da.cs" />
+    <Compile Include="DDA_Classes\DataAccess\DataViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DDA_Classes\DataAccess\Distributor_da.cs" />
+    <Compile Include="DDA_Classes\DataAccess\Location_da.cs" />
+    <Compile Include="DDA_Classes\DataAccess\Representative_da.cs" />
+    <Compile Include="DDA_Classes\DataAccess\User_da.cs" />
+    <Compile Include="DDA_Classes\DataObjects\AppData.cs" />
+    <Compile Include="DDA_Classes\DataObjects\Contract.cs" />
+    <Compile Include="DDA_Classes\DataObjects\Distributor.cs" />
+    <Compile Include="DDA_Classes\DataObjects\ObjectArray.cs" />
+    <Compile Include="DDA_Classes\DataObjects\Reports.cs" />
+    <Compile Include="DDA_Classes\DataObjects\Representative.cs" />
+    <Compile Include="DealerLocator.Master.cs">
+      <DependentUpon>DealerLocator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerLocator.Master.designer.cs">
+      <DependentUpon>DealerLocator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DevDisplay.aspx.cs">
+      <DependentUpon>DevDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevDisplay.aspx.designer.cs">
+      <DependentUpon>DevDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DevSendFax.aspx.cs">
+      <DependentUpon>DevSendFax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevSendFax.aspx.designer.cs">
+      <DependentUpon>DevSendFax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JpegImage.aspx.cs">
+      <DependentUpon>JpegImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk.aspx.cs">
+      <DependentUpon>Kiosk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk.aspx.designer.cs">
+      <DependentUpon>Kiosk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KioskThankYou.aspx.cs">
+      <DependentUpon>KioskThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KioskThankYou.aspx.designer.cs">
+      <DependentUpon>KioskThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeadSubmission.ashx.cs">
+      <DependentUpon>LeadSubmission.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="locate.aspx.cs">
+      <DependentUpon>locate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="locate.aspx.designer.cs">
+      <DependentUpon>locate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocateHandler.ashx.cs">
+      <DependentUpon>LocateHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LocateResults.aspx.cs">
+      <DependentUpon>LocateResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocateResults.aspx.designer.cs">
+      <DependentUpon>LocateResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Location.asmx.cs">
+      <DependentUpon>Location.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductSearch.ashx.cs">
+      <DependentUpon>ProductSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SalesLeadForm.aspx.cs">
+      <DependentUpon>SalesLeadForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesLeadForm.aspx.designer.cs">
+      <DependentUpon>SalesLeadForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\DatabaseSyncTests.cs" />
+    <Compile Include="Tests\LeadTests.cs" />
+    <Compile Include="Tests\MapReportTest.cs" />
+    <Compile Include="Tests\MapTests.cs" />
+    <Compile Include="Thanks.aspx.cs">
+      <DependentUpon>Thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thanks.aspx.designer.cs">
+      <DependentUpon>Thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\CategoriesHelpControl.ascx.cs">
+      <DependentUpon>CategoriesHelpControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\CategoriesHelpControl.ascx.designer.cs">
+      <DependentUpon>CategoriesHelpControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\MainCategoryDockMenu.ascx.cs">
+      <DependentUpon>MainCategoryDockMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\MainCategoryDockMenu.ascx.designer.cs">
+      <DependentUpon>MainCategoryDockMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\MainCategoryUserControl.ascx.cs">
+      <DependentUpon>MainCategoryUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\MainCategoryUserControl.ascx.designer.cs">
+      <DependentUpon>MainCategoryUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\MainCategoryCarouselUserControl.ascx.cs">
+      <DependentUpon>MainCategoryCarouselUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\MainCategoryCarouselUserControl.ascx.designer.cs">
+      <DependentUpon>MainCategoryCarouselUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\DatabaseSync.cs" />
+    <Compile Include="Web References\com.findbomag.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="ZipSearch.ashx.cs">
+      <DependentUpon>ZipSearch.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Administration.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Administration\DefaultSalesLeadControl.ascx" />
+    <Content Include="admin\Administration\DefaultSalesLeadForm.aspx" />
+    <Content Include="admin\Administration\DistributionGrouping.aspx" />
+    <Content Include="admin\Administration\DoNotPlanToBuyControl.ascx" />
+    <Content Include="admin\Administration\DoNotPlanToBuySetup.aspx" />
+    <Content Include="admin\Administration\ElectronicDistributionControl.ascx" />
+    <Content Include="admin\Administration\Groups.aspx" />
+    <Content Include="admin\Administration\GroupsControl.ascx" />
+    <Content Include="admin\Administration\EmailControl.ascx" />
+    <Content Include="admin\Administration\RentalAdministratorEmailControl.ascx" />
+    <Content Include="admin\Administration\LeadLetterEditorControl.ascx" />
+    <Content Include="admin\Administration\LocationsControl.ascx" />
+    <Content Include="admin\Reports\Scripts\tinycolor.js" />
+    <Content Include="admin\Reports\TerritoryMapReport.aspx" />
+    <Content Include="admin\Reports\TerritoryMapReportControl.ascx" />
+    <Content Include="admin\DataExport\ExcelDownload.ascx" />
+    <Content Include="admin\DataExport\ExportGrouping.ascx" />
+    <Content Include="admin\DataExport\ExportUnsentLeads.ascx" />
+    <Content Include="admin\DataImport\ImportDealerInformation.ascx" />
+    <Content Include="admin\DataImport\ImportGrouping.ascx" />
+    <Content Include="admin\DataImport\ImportSalesLeadInformationControl.ascx" />
+    <Content Include="admin\DataImport\ZipCodeImport.ascx" />
+    <Content Include="admin\DesktopLead\BulkLeadImport.aspx" />
+    <Content Include="admin\DesktopLead\DeleteLead.ascx" />
+    <Content Include="admin\DesktopLead\MapFieldsControl.ascx" />
+    <Content Include="admin\DesktopLead\ModifyDeleteLeadGrouping.aspx" />
+    <Content Include="admin\DesktopLead\ModifyLeadData.aspx" />
+    <Content Include="admin\DesktopLead\ModifyLeadSearch.ascx" />
+    <Content Include="admin\DesktopLead\PushLeadsManually.ascx" />
+    <Content Include="admin\DesktopLead\SyncWithWebDatabase.ascx" />
+    <Content Include="admin\DesktopLead\TransferLeads.ascx" />
+    <Content Include="admin\DesktopLead\TransferPendingLeads.ascx" />
+    <Content Include="admin\FormDevelopment\AddModifyModelControl.ascx" />
+    <Content Include="admin\FormDevelopment\ManageCategoriesControl.ascx" />
+    <Content Include="admin\FormDevelopment\ManageModelsControl.ascx" />
+    <Content Include="admin\Administration\PhysicalDistributionControl.ascx" />
+    <Content Include="admin\Administration\RegionManagement.aspx" />
+    <Content Include="admin\FormDevelopment\MainCategoryDockImageManagerControl.ascx" />
+    <Content Include="admin\FormDevelopment\ReAssign\ReassignModelControl.ascx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderModelsControl.ascx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderMainCategoriesControl.ascx" />
+    <Content Include="admin\Administration\RepMap.aspx" />
+    <Content Include="admin\Administration\RepMapControl.ascx" />
+    <Content Include="admin\Administration\SalesLeadVendorEmailEditor.aspx" />
+    <Content Include="admin\Administration\SUControlPanel.aspx" />
+    <Content Include="admin\Administration\User.aspx" />
+    <Content Include="admin\Administration\Users.aspx" />
+    <Content Include="admin\Administration\UsersControl.ascx" />
+    <Content Include="admin\Administration\UsersGrouping.aspx" />
+    <Content Include="admin\Administration\Vendor.aspx" />
+    <Content Include="admin\DataImportExport.aspx" />
+    <Content Include="admin\data\json-windows-data.js" />
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\DesktopLead\BlockUserCompany.aspx" />
+    <Content Include="admin\FormDevelopment\CopyFormControl.ascx" />
+    <Content Include="admin\FormDevelopment\Dashboard.aspx" />
+    <Content Include="admin\FormDevelopment\DashboardCategories.aspx" />
+    <Content Include="admin\FormDevelopment\FormElements.aspx" />
+    <Content Include="admin\FormDevelopment\FormTemplateControl.ascx" />
+    <Content Include="admin\FormDevelopment\GenerateFormUrls.aspx" />
+    <Content Include="admin\FormDevelopment\HeaderFooter.aspx" />
+    <Content Include="admin\FormDevelopment\ProductModels.aspx" />
+    <Content Include="admin\FormDevelopment\ReAssign\ReassignModels.aspx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderElementValues.aspx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderFormElements.aspx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderMainCategories.aspx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderProductModels.aspx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderSubCategories.aspx" />
+    <Content Include="admin\FormDevelopment\ReOrder\ReorderSubCategoriesControl.ascx" />
+    <Content Include="admin\FormDevelopment\SubCategoriesControl.ascx" />
+    <Content Include="admin\FormDevelopment\ThanksURL.aspx" />
+    <Content Include="admin\FormDevelopment\FormsGrouping.aspx" />
+    <Content Include="admin\Images\ajax-loader.gif" />
+    <Content Include="admin\Images\arrow_down_blue.gif" />
+    <Content Include="admin\Images\arrow_up_blue.gif" />
+    <Content Include="admin\Images\Calendar_scheduleHS.png" />
+    <Content Include="admin\Images\dl_bomag_logo.jpg" />
+    <Content Include="admin\Images\findbomag-art-logo.png" />
+    <Content Include="admin\Images\login_bomag.jpg" />
+    <Content Include="admin\Images\login_world.jpg" />
+    <Content Include="admin\Images\Tabs\spacer.gif" />
+    <Content Include="admin\Images\Tabs\ui_bot.gif" />
+    <Content Include="admin\Images\Tabs\ui_mid_left.gif" />
+    <Content Include="admin\Images\Tabs\ui_mid_right.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_bg1.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_bg2.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_l1.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_l2.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_middle.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_r1.gif" />
+    <Content Include="admin\Images\Tabs\ui_tab_r2.gif" />
+    <Content Include="admin\Images\Tabs\ui_top_btn.gif" />
+    <Content Include="admin\Images\Tabs\ui_top_left.gif" />
+    <Content Include="admin\Images\Tabs\ui_top_right.gif" />
+    <Content Include="admin\Images\yellowbluefade.jpg" />
+    <Content Include="admin\js\TerritoryMapReport.js" />
+    <Content Include="admin\Login.aspx" />
+    <Content Include="admin\Logout.aspx" />
+    <Content Include="admin\ManageDesktopSetup.aspx" />
+    <Content Include="admin\Models.aspx" />
+    <Content Include="admin\FormDevelopment\ModelsGrouping.aspx" />
+    <Content Include="admin\ModifyDeleteLead.aspx" />
+    <Content Include="admin\ProcessLeads.aspx" />
+    <Content Include="admin\Reports\ErrorReportsGrouping.ascx" />
+    <Content Include="admin\Reports\IncorrectDistributorCityReport.ascx" />
+    <Content Include="admin\Reports\IncorrectDistributorZipReport.ascx" />
+    <Content Include="admin\Reports\LeadSubmissionErrorsReport.ascx" />
+    <Content Include="admin\Reports\MapReport.aspx" />
+    <Content Include="admin\Reports\ReportsList.aspx" />
+    <Content Include="admin\Reports\BySourceReport.ascx" />
+    <Content Include="admin\Reports\CreateExcelReport.aspx" />
+    <Content Include="admin\Reports\emailTemplate.ascx" />
+    <Content Include="admin\Reports\FaxBulletin.aspx" />
+    <Content Include="admin\Reports\GeneralTMReport.ascx" />
+    <Content Include="admin\Reports\LatLongReport.aspx" />
+    <Content Include="admin\Reports\MarkAsFixed.aspx" />
+    <Content Include="admin\Reports\PendingLeadsListReport.ascx" />
+    <Content Include="admin\Reports\Scripts\images\death.png" />
+    <Content Include="admin\Reports\Scripts\images\layers.png" />
+    <Content Include="admin\Reports\Scripts\images\marker-icon%402x.png" />
+    <Content Include="admin\Reports\Scripts\images\marker-icon.png" />
+    <Content Include="admin\Reports\Scripts\images\marker-shadow.png" />
+    <Content Include="admin\Reports\Scripts\jquery-1.10.0.min.js" />
+    <Content Include="admin\Reports\Scripts\jquery-ui.min.js" />
+    <Content Include="admin\Reports\Scripts\leaflet-google.js" />
+    <Content Include="admin\Reports\Scripts\leaflet-src.js" />
+    <Content Include="admin\Reports\Scripts\leaflet.js" />
+    <Content Include="admin\Reports\Scripts\leaflet.label.js" />
+    <Content Include="admin\Reports\SelectYear.ascx" />
+    <Content Include="admin\Reports\Styles\images\empty.png" />
+    <Content Include="admin\Reports\Styles\images\layers.png" />
+    <Content Include="admin\Reports\Styles\images\marker-icon%402x.png" />
+    <Content Include="admin\Reports\Styles\images\marker-icon.png" />
+    <Content Include="admin\Reports\Styles\images\marker-shadow.png" />
+    <Content Include="admin\Reports\Styles\leaflet.css" />
+    <Content Include="admin\Reports\Styles\leaflet.ie.css" />
+    <Content Include="admin\Reports\Styles\leaflet.label.css" />
+    <Content Include="admin\Reports\Styles\MapReport.css" />
+    <Content Include="admin\Reports\Styles\MapReportPrint.css" />
+    <Content Include="admin\Reports\TerritoryManagerLeadsByDealer.aspx" />
+    <Content Include="admin\Reports\TerritoryManagerReport.aspx" />
+    <Content Include="admin\Reports\TMReportPasser.aspx" />
+    <Content Include="admin\Reports\TMReportsDashboard.aspx" />
+    <Content Include="admin\Reports\ViewErrorEmail.aspx" />
+    <Content Include="admin\Reports\ViewErrorEmailListing.aspx" />
+    <Content Include="admin\Reports\ViewLead.aspx" />
+    <Content Include="admin\Reports\ViewLeadList.aspx" />
+    <Content Include="admin\Styles\Base.css" />
+    <Content Include="admin\Styles\ExcelDownloads.css" />
+    <Content Include="admin\Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="admin\Styles\TerritoryMapReport.css" />
+    <Content Include="admin\WebServices\LeadSender.asmx" />
+    <Content Include="admin\WebServices\MapReportService.asmx" />
+    <Content Include="cats.html" />
+    <Content Include="css\custom-theme\images\animated-overlay.gif" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_50_1e1e1f_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_55_fbf9ee_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_75_bfcde8_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_75_e6e6e6_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_95_fef1ec_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_65_bbbbbb_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_highlight-soft_75_FFFFFF_1x100.png" />
+    <Content Include="css\dd.css" />
+    <Content Include="css\iepngfix.htc" />
+    <Content Include="css\jqModal.css" />
+    <Content Include="css\jquery.bxslider.css" />
+    <Content Include="css\jquery.qtip.css" />
+    <Content Include="css\locate.css" />
+    <Content Include="css\LocateResults.css" />
+    <Content Include="css\main-ui.css" />
+    <Content Include="css\main-ui_backup.css" />
+    <Content Include="css\navDock.css" />
+    <Content Include="css\salesleadform.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tabs.css" />
+    <Content Include="css\ui-lightness\jquery-ui-1.8.4.custom.css" />
+    <Content Include="development-bundle\AUTHORS.txt" />
+    <Content Include="development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="development-bundle\demos\accordion\default.html" />
+    <Content Include="development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="development-bundle\demos\accordion\index.html" />
+    <Content Include="development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="development-bundle\demos\accordion\sortable.html" />
+    <Content Include="development-bundle\demos\addClass\default.html" />
+    <Content Include="development-bundle\demos\addClass\index.html" />
+    <Content Include="development-bundle\demos\animate\default.html" />
+    <Content Include="development-bundle\demos\animate\index.html" />
+    <Content Include="development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="development-bundle\demos\autocomplete\default.html" />
+    <Content Include="development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="development-bundle\demos\autocomplete\index.html" />
+    <Content Include="development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="development-bundle\demos\button\checkbox.html" />
+    <Content Include="development-bundle\demos\button\default.html" />
+    <Content Include="development-bundle\demos\button\icons.html" />
+    <Content Include="development-bundle\demos\button\index.html" />
+    <Content Include="development-bundle\demos\button\radio.html" />
+    <Content Include="development-bundle\demos\button\splitbutton.html" />
+    <Content Include="development-bundle\demos\button\toolbar.html" />
+    <Content Include="development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="development-bundle\demos\datepicker\animation.html" />
+    <Content Include="development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="development-bundle\demos\datepicker\default.html" />
+    <Content Include="development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="development-bundle\demos\datepicker\event-search.html" />
+    <Content Include="development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="development-bundle\demos\datepicker\index.html" />
+    <Content Include="development-bundle\demos\datepicker\inline.html" />
+    <Content Include="development-bundle\demos\datepicker\localization.html" />
+    <Content Include="development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="development-bundle\demos\demos.css" />
+    <Content Include="development-bundle\demos\dialog\animated.html" />
+    <Content Include="development-bundle\demos\dialog\default.html" />
+    <Content Include="development-bundle\demos\dialog\index.html" />
+    <Content Include="development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="development-bundle\demos\dialog\modal.html" />
+    <Content Include="development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="development-bundle\demos\draggable\default.html" />
+    <Content Include="development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="development-bundle\demos\draggable\events.html" />
+    <Content Include="development-bundle\demos\draggable\handle.html" />
+    <Content Include="development-bundle\demos\draggable\index.html" />
+    <Content Include="development-bundle\demos\draggable\revert.html" />
+    <Content Include="development-bundle\demos\draggable\scroll.html" />
+    <Content Include="development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="development-bundle\demos\draggable\sortable.html" />
+    <Content Include="development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="development-bundle\demos\droppable\default.html" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\index.html" />
+    <Content Include="development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="development-bundle\demos\droppable\propagation.html" />
+    <Content Include="development-bundle\demos\droppable\revert.html" />
+    <Content Include="development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="development-bundle\demos\effect\default.html" />
+    <Content Include="development-bundle\demos\effect\easing.html" />
+    <Content Include="development-bundle\demos\effect\index.html" />
+    <Content Include="development-bundle\demos\hide\default.html" />
+    <Content Include="development-bundle\demos\hide\index.html" />
+    <Content Include="development-bundle\demos\images\calendar.gif" />
+    <Content Include="development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="development-bundle\demos\images\jqueryui_32x32.png" />
+    <Content Include="development-bundle\demos\images\jquery_32x32.png" />
+    <Content Include="development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="development-bundle\demos\images\sizzlejs_32x32.png" />
+    <Content Include="development-bundle\demos\images\transparent_1x1.png" />
+    <Content Include="development-bundle\demos\index.html" />
+    <Content Include="development-bundle\demos\position\cycler.html" />
+    <Content Include="development-bundle\demos\position\default.html" />
+    <Content Include="development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="development-bundle\demos\position\index.html" />
+    <Content Include="development-bundle\demos\progressbar\animated.html" />
+    <Content Include="development-bundle\demos\progressbar\default.html" />
+    <Content Include="development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="development-bundle\demos\progressbar\index.html" />
+    <Content Include="development-bundle\demos\progressbar\resize.html" />
+    <Content Include="development-bundle\demos\removeClass\default.html" />
+    <Content Include="development-bundle\demos\removeClass\index.html" />
+    <Content Include="development-bundle\demos\resizable\animate.html" />
+    <Content Include="development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="development-bundle\demos\resizable\default.html" />
+    <Content Include="development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="development-bundle\demos\resizable\helper.html" />
+    <Content Include="development-bundle\demos\resizable\index.html" />
+    <Content Include="development-bundle\demos\resizable\max-min.html" />
+    <Content Include="development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="development-bundle\demos\resizable\textarea.html" />
+    <Content Include="development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="development-bundle\demos\selectable\default.html" />
+    <Content Include="development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="development-bundle\demos\selectable\index.html" />
+    <Content Include="development-bundle\demos\selectable\serialize.html" />
+    <Content Include="development-bundle\demos\show\default.html" />
+    <Content Include="development-bundle\demos\show\index.html" />
+    <Content Include="development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="development-bundle\demos\slider\default.html" />
+    <Content Include="development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="development-bundle\demos\slider\index.html" />
+    <Content Include="development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="development-bundle\demos\slider\range.html" />
+    <Content Include="development-bundle\demos\slider\rangemax.html" />
+    <Content Include="development-bundle\demos\slider\rangemin.html" />
+    <Content Include="development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="development-bundle\demos\slider\steps.html" />
+    <Content Include="development-bundle\demos\slider\tabs.html" />
+    <Content Include="development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="development-bundle\demos\sortable\default.html" />
+    <Content Include="development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="development-bundle\demos\sortable\index.html" />
+    <Content Include="development-bundle\demos\sortable\items.html" />
+    <Content Include="development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="development-bundle\demos\sortable\portlets.html" />
+    <Content Include="development-bundle\demos\switchClass\default.html" />
+    <Content Include="development-bundle\demos\switchClass\index.html" />
+    <Content Include="development-bundle\demos\tabs\ajax.html" />
+    <Content Include="development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="development-bundle\demos\tabs\bottom.html" />
+    <Content Include="development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="development-bundle\demos\tabs\cookie.html" />
+    <Content Include="development-bundle\demos\tabs\default.html" />
+    <Content Include="development-bundle\demos\tabs\index.html" />
+    <Content Include="development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="development-bundle\demos\tabs\sortable.html" />
+    <Content Include="development-bundle\demos\tabs\vertical.html" />
+    <Content Include="development-bundle\demos\toggleClass\default.html" />
+    <Content Include="development-bundle\demos\toggleClass\index.html" />
+    <Content Include="development-bundle\demos\toggle\default.html" />
+    <Content Include="development-bundle\demos\toggle\index.html" />
+    <Content Include="development-bundle\docs\accordion.html" />
+    <Content Include="development-bundle\docs\addClass.html" />
+    <Content Include="development-bundle\docs\animate.html" />
+    <Content Include="development-bundle\docs\autocomplete.html" />
+    <Content Include="development-bundle\docs\button.html" />
+    <Content Include="development-bundle\docs\datepicker.html" />
+    <Content Include="development-bundle\docs\dialog.html" />
+    <Content Include="development-bundle\docs\draggable.html" />
+    <Content Include="development-bundle\docs\droppable.html" />
+    <Content Include="development-bundle\docs\effect.html" />
+    <Content Include="development-bundle\docs\hide.html" />
+    <Content Include="development-bundle\docs\position.html" />
+    <Content Include="development-bundle\docs\progressbar.html" />
+    <Content Include="development-bundle\docs\removeClass.html" />
+    <Content Include="development-bundle\docs\resizable.html" />
+    <Content Include="development-bundle\docs\selectable.html" />
+    <Content Include="development-bundle\docs\show.html" />
+    <Content Include="development-bundle\docs\slider.html" />
+    <Content Include="development-bundle\docs\sortable.html" />
+    <Content Include="development-bundle\docs\switchClass.html" />
+    <Content Include="development-bundle\docs\tabs.html" />
+    <Content Include="development-bundle\docs\toggle.html" />
+    <Content Include="development-bundle\docs\toggleClass.html" />
+    <Content Include="development-bundle\external\jquery.bgiframe-2.1.1.js" />
+    <Content Include="development-bundle\external\jquery.cookie.js" />
+    <Content Include="development-bundle\external\jquery.metadata.js" />
+    <Content Include="development-bundle\external\qunit.css" />
+    <Content Include="development-bundle\external\qunit.js" />
+    <Content Include="development-bundle\GPL-LICENSE.txt" />
+    <Content Include="development-bundle\jquery-1.4.2.js" />
+    <Content Include="development-bundle\MIT-LICENSE.txt" />
+    <Content Include="development-bundle\themes\base\images\ui-anim_basic_16x16.gif" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-anim_basic_16x16.gif" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_diagonals-medium_50_1e1e1f_40x40.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_flat_0_4d4d4d_40x100.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_glass_75_bfcde8_1x400.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_highlight-soft_75_bfcde8_1x100.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-icons_193fae_256x240.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="development-bundle\themes\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="development-bundle\themes\custom-theme\jquery-ui-1.8.2.custom.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.accordion.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.all.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.autocomplete.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.base.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.button.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.core.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.datepicker.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.dialog.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.progressbar.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.resizable.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.selectable.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.slider.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.tabs.css" />
+    <Content Include="development-bundle\themes\custom-theme\jquery.ui.theme.css" />
+    <Content Include="development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="development-bundle\ui\jquery-ui-1.8.2.custom.js" />
+    <Content Include="development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="development-bundle\version.txt" />
+    <Content Include="images\arrows-ffffff.png" />
+    <Content Include="css\custom-theme\images\ui-anim_basic_16x16.gif" />
+    <Content Include="css\custom-theme\images\ui-bg_diagonals-medium_50_1e1e1f_40x40.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_0_4d4d4d_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_75_bfcde8_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_highlight-soft_75_bfcde8_1x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="css\custom-theme\images\ui-icons_193fae_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\custom-theme\jquery-ui.custom.css" />
+    <Content Include="images\arrows-x.gif" />
+    <Content Include="images\autocomplete-x.png" />
+    <Content Include="images\bckgrd_content-repeat.png" />
+    <Content Include="images\bckgrd_footer-main.png" />
+    <Content Include="images\bckgrd_footer-repeat.png" />
+    <Content Include="images\bckgrd_header-repeat.png" />
+    <Content Include="images\blue.png" />
+    <Content Include="images\bomag_fayat_group_logo.png" />
+    <Content Include="images\button-l-gray.png" />
+    <Content Include="images\button-l-green.png" />
+    <Content Include="images\button-r-gray.png" />
+    <Content Include="images\button-r-green.png" />
+    <Content Include="images\bx_loader.gif" />
+    <Content Include="images\carousel-arrow-sprite.png" />
+    <Content Include="images\carousel-left-arrow.png" />
+    <Content Include="images\carousel-right-arrow.png" />
+    <Content Include="images\content-tab-bckgrnd.png" />
+    <Content Include="images\controls.png" />
+    <Content Include="images\dockmenu\blank.gif" />
+    <Content Include="images\dockmenu\close.png" />
+    <Content Include="images\dockmenu\dock-bg.gif" />
+    <Content Include="images\dockmenu\dock-bg2.gif" />
+    <Content Include="images\dockmenu\Mail.png" />
+    <Content Include="images\dockmenu\main-bg.gif" />
+    <Content Include="images\dockmenu\Product.png" />
+    <Content Include="images\dock\BOMAG_Light_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Light_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Light_Tandem_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Light_Tandem_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Medium_Tandem_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Medium_Tandem_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Mills_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Mills_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Pavers_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Pavers_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Recyclers_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Recyclers_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Refuse_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Refuse_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Single_Drums_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Single_Drums_icon-sm.png" />
+    <Content Include="images\dock\BOMAG_Tandem_icon-lg.png" />
+    <Content Include="images\dock\BOMAG_Tandem_icon-sm.png" />
+    <Content Include="images\dock\compactors.png" />
+    <Content Include="images\dock\heavy_pneumatic.png" />
+    <Content Include="images\dock\Hypac_icon-lg.png" />
+    <Content Include="images\dock\Hypac_icon-sm.png" />
+    <Content Include="images\dock\light-tandem.png" />
+    <Content Include="images\dock\light_equip.png" />
+    <Content Include="images\dock\light_pneumatic.png" />
+    <Content Include="images\dock\medium-tandem.png" />
+    <Content Include="images\dock\mph_recyclers_stabilizers.png" />
+    <Content Include="images\dock\pavers_material_transfer.png" />
+    <Content Include="images\dock\recyclers_stabilizers.png" />
+    <Content Include="images\findbomag.com_logo.png" />
+    <Content Include="images\header-findBOMAG_logo.png" />
+    <Content Include="images\heading-background-l.png" />
+    <Content Include="images\heading-background-r.png" />
+    <Content Include="images\producthelp\down-arrow-help.png" />
+    <Content Include="images\producthelp\help-bar.png" />
+    <Content Include="images\number-1-icon.png" />
+    <Content Include="images\number-2-icon.png" />
+    <Content Include="images\number-3-icon.png" />
+    <Content Include="images\producthelp\product-types-text.png" />
+    <Content Include="images\producthelp\up-arrow-help.png" />
+    <Content Include="images\question-mark-icon.png" />
+    <Content Include="images\shadow.png" />
+    <Content Include="css\superfish-navbar.css" />
+    <Content Include="css\superfish-vertical.css" />
+    <Content Include="css\superfish.css" />
+    <Content Include="DealerLocatar_Ajax.Publish.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="DevDisplay.aspx" />
+    <Content Include="DevSendFax.aspx" />
+    <Content Include="images\arrows-x_scaled.png" />
+    <Content Include="images\slider\slider-background.gif" />
+    <Content Include="images\spinner.gif" />
+    <Content Include="images\tabs.png" />
+    <Content Include="images\utility-controls.png" />
+    <Content Include="images\white-circle-down-arrow.png" />
+    <Content Include="index.html" />
+    <Content Include="JpegImage.aspx" />
+    <Content Include="css\ui-lightness\images\ui-anim_basic_16x16.gif" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\blank.gif" />
+    <Content Include="js\hoverIntent.js" />
+    <Content Include="js\dock.interface.js" />
+    <Content Include="js\iepngfix_tilebg.js" />
+    <Content Include="js\jqDnR.js" />
+    <Content Include="js\jqModal.js" />
+    <Content Include="js\jquery-current.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.bgiframe.min.js" />
+    <Content Include="js\jquery.bxslider.js" />
+    <Content Include="js\jquery.carouFredSel-6.2.1.js" />
+    <Content Include="js\jquery.corner.js" />
+    <Content Include="js\jquery.dd.min.js" />
+    <Content Include="js\jquery.infieldlabel.js" />
+    <Content Include="js\jquery.jqDock.js" />
+    <Content Include="js\jquery.jqDock.min.js" />
+    <Content Include="js\jquery.jstree.js" />
+    <Content Include="js\jquery.maskedinput-1.2.2.min.js" />
+    <Content Include="js\jquery.maskedinput.js" />
+    <Content Include="js\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="js\jquery.qtip.min.js" />
+    <Content Include="js\jquery.tools.min.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\navDock.min.js" />
+    <Content Include="js\pngfix.js" />
+    <Content Include="js\SalesLeadForm.js" />
+    <Content Include="js\SalesLeadForm\SearchAutoComplete.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="js\supersubs.js" />
+    <Content Include="js\tabs.min.js" />
+    <Content Include="Kiosk.aspx" />
+    <Content Include="KioskThankYou.aspx" />
+    <Content Include="locate.aspx" />
+    <Content Include="LocateResults.aspx" />
+    <Content Include="Location.asmx" />
+    <Content Include="SalesLeadForm.aspx" />
+    <Content Include="Scripts\jquery.bgiframe.js" />
+    <Content Include="Scripts\jquery.bgiframe.min.js" />
+    <Content Include="TestMap.htm" />
+    <Content Include="Thanks.aspx" />
+    <Content Include="usercontrols\CategoriesHelpControl.ascx" />
+    <Content Include="usercontrols\Footer.ascx" />
+    <Content Include="usercontrols\Header.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin\Images\Thumbs.db" />
+    <Content Include="admin\Reports\LeadList.ascx" />
+    <Content Include="App.config" />
+    <Content Include="CityStateSearch.ashx" />
+    <Content Include="DealerLocator.Master" />
+    <Content Include="admin\Reports\Data\report_9674911.json" />
+    <Content Include="admin\Reports\Data\report_6451187.json" />
+    <Content Include="admin\Reports\Data\report_9789712.json" />
+    <Content Include="admin\Reports\Data\report_nodist.json" />
+    <Content Include="admin\Reports\Data\report_alabama_embankment.json" />
+    <Content Include="admin\Reports\Data\report_2290773.json" />
+    <None Include="admin\Reports\Data\report_4979611.json" />
+    <None Include="admin\Reports\Data\report_753618.json" />
+    <Content Include="admin\Reports\GeoData\Alabama.json" />
+    <Content Include="admin\Reports\GeoData\Alaska.json" />
+    <Content Include="admin\Reports\GeoData\Arizona.json" />
+    <Content Include="admin\Reports\GeoData\Arkansas.json" />
+    <Content Include="admin\Reports\GeoData\California.json" />
+    <Content Include="admin\Reports\GeoData\Colorado.json" />
+    <Content Include="admin\Reports\GeoData\Connecticut.json" />
+    <Content Include="admin\Reports\GeoData\Delaware.json" />
+    <Content Include="admin\Reports\GeoData\District of Columbia.json" />
+    <Content Include="admin\Reports\GeoData\Florida.json" />
+    <Content Include="admin\Reports\GeoData\Georgia.json" />
+    <Content Include="admin\Reports\GeoData\Hawaii.json" />
+    <Content Include="admin\Reports\GeoData\Idaho.json" />
+    <Content Include="admin\Reports\GeoData\Illinois.json" />
+    <Content Include="admin\Reports\GeoData\Indiana.json" />
+    <Content Include="admin\Reports\GeoData\Iowa.json" />
+    <Content Include="admin\Reports\GeoData\Kansas.json" />
+    <Content Include="admin\Reports\GeoData\Kentucky.json" />
+    <Content Include="admin\Reports\GeoData\Louisiana.json" />
+    <Content Include="admin\Reports\GeoData\Maine.json" />
+    <Content Include="admin\Reports\GeoData\Maryland.json" />
+    <Content Include="admin\Reports\GeoData\Massachusetts.json" />
+    <Content Include="admin\Reports\GeoData\Michigan.json" />
+    <Content Include="admin\Reports\GeoData\Minnesota.json" />
+    <Content Include="admin\Reports\GeoData\Mississippi.json" />
+    <Content Include="admin\Reports\GeoData\Missouri.json" />
+    <Content Include="admin\Reports\GeoData\Montana.json" />
+    <Content Include="admin\Reports\GeoData\Nebraska.json" />
+    <Content Include="admin\Reports\GeoData\Nevada.json" />
+    <Content Include="admin\Reports\GeoData\New Hampshire.json" />
+    <Content Include="admin\Reports\GeoData\New Jersey.json" />
+    <Content Include="admin\Reports\GeoData\New Mexico.json" />
+    <Content Include="admin\Reports\GeoData\New York.json" />
+    <Content Include="admin\Reports\GeoData\North Carolina.json" />
+    <Content Include="admin\Reports\GeoData\North Dakota.json" />
+    <Content Include="admin\Reports\GeoData\Ohio.json" />
+    <Content Include="admin\Reports\GeoData\Oklahoma.json" />
+    <Content Include="admin\Reports\GeoData\Oregon.json" />
+    <Content Include="admin\Reports\GeoData\Pennsylvania.json" />
+    <Content Include="admin\Reports\GeoData\Rhode Island.json" />
+    <Content Include="admin\Reports\GeoData\South Carolina.json" />
+    <Content Include="admin\Reports\GeoData\South Dakota.json" />
+    <Content Include="admin\Reports\GeoData\Tennessee.json" />
+    <Content Include="admin\Reports\GeoData\Texas.json" />
+    <Content Include="admin\Reports\GeoData\Utah.json" />
+    <Content Include="admin\Reports\GeoData\Vermont.json" />
+    <Content Include="admin\Reports\GeoData\Virginia.json" />
+    <Content Include="admin\Reports\GeoData\Washington.json" />
+    <Content Include="admin\Reports\GeoData\West Virginia.json" />
+    <Content Include="admin\Reports\GeoData\Wisconsin.json" />
+    <Content Include="admin\Reports\GeoData\Wyoming.json" />
+    <Content Include="admin\Reports\Data\report_split.json" />
+    <Content Include="admin\Reports\Data\report_split_tn.json" />
+    <Content Include="admin\Reports\Data\report_split_ny.json" />
+    <Content Include="admin\Reports\Data\report_lake_mission.json" />
+    <Content Include="admin\Reports\Data\report_california_missinggeo.json" />
+    <Content Include="admin\Reports\ReportHandler.ashx" />
+    <None Include="DA\ContractTDS.xsc">
+      <DependentUpon>ContractTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ContractTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContractTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\ContractTDS.xss">
+      <DependentUpon>ContractTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ElementValueTDS.xsc">
+      <DependentUpon>ElementValueTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ElementValueTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ElementValueTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\ElementValueTDS.xss">
+      <DependentUpon>ElementValueTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\EmailTemplate.xsc">
+      <DependentUpon>EmailTemplate.xsd</DependentUpon>
+    </None>
+    <None Include="DA\EmailTemplate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmailTemplate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\EmailTemplate.xss">
+      <DependentUpon>EmailTemplate.xsd</DependentUpon>
+    </None>
+    <None Include="DA\FieldElementTypeTDS.xsc">
+      <DependentUpon>FieldElementTypeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\FieldElementTypeTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FieldElementTypeTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\FieldElementTypeTDS.xss">
+      <DependentUpon>FieldElementTypeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\FormElementTDS.xsc">
+      <DependentUpon>FormElementTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\FormElementTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FormElementTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\FormElementTDS.xss">
+      <DependentUpon>FormElementTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\GroupdTDS.xsc">
+      <DependentUpon>GroupdTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\GroupdTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupdTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\GroupdTDS.xss">
+      <DependentUpon>GroupdTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\HeaderFooter.xsc">
+      <DependentUpon>HeaderFooter.xsd</DependentUpon>
+    </None>
+    <None Include="DA\HeaderFooter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HeaderFooter.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\HeaderFooter.xss">
+      <DependentUpon>HeaderFooter.xsd</DependentUpon>
+    </None>
+    <None Include="DA\Leads.xsc">
+      <DependentUpon>Leads.xsd</DependentUpon>
+    </None>
+    <None Include="DA\Leads.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Leads.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\Leads.xss">
+      <DependentUpon>Leads.xsd</DependentUpon>
+    </None>
+    <None Include="DA\LeadsTDS.xsc">
+      <DependentUpon>LeadsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\LeadsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeadsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\LeadsTDS.xss">
+      <DependentUpon>LeadsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\MainCategoryTDS.xsc">
+      <DependentUpon>MainCategoryTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\MainCategoryTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MainCategoryTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\MainCategoryTDS.xss">
+      <DependentUpon>MainCategoryTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\MapTDS.xsc">
+      <DependentUpon>MapTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\MapTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MapTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\MapTDS.xss">
+      <DependentUpon>MapTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ModelTDS.xsc">
+      <DependentUpon>ModelTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ModelTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ModelTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\ModelTDS.xss">
+      <DependentUpon>ModelTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\Region.xsc">
+      <DependentUpon>Region.xsd</DependentUpon>
+    </None>
+    <None Include="DA\Region.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Region.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\Region.xss">
+      <DependentUpon>Region.xsd</DependentUpon>
+    </None>
+    <None Include="DA\RepMapping.xsc">
+      <DependentUpon>RepMapping.xsd</DependentUpon>
+    </None>
+    <None Include="DA\RepMapping.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepMapping.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\RepMapping.xss">
+      <DependentUpon>RepMapping.xsd</DependentUpon>
+    </None>
+    <None Include="DA\SalesLeadFormTDS.xsc">
+      <DependentUpon>SalesLeadFormTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\SalesLeadFormTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesLeadFormTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\SalesLeadFormTDS.xss">
+      <DependentUpon>SalesLeadFormTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\SplitCounty.xsc">
+      <DependentUpon>SplitCounty.xsd</DependentUpon>
+    </None>
+    <None Include="DA\SplitCounty.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SplitCounty.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\SplitCounty.xss">
+      <DependentUpon>SplitCounty.xsd</DependentUpon>
+    </None>
+    <None Include="DA\State.xsc">
+      <DependentUpon>State.xsd</DependentUpon>
+    </None>
+    <None Include="DA\State.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>State.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\State.xss">
+      <DependentUpon>State.xsd</DependentUpon>
+    </None>
+    <None Include="DA\SubCategoryTDS2.xsc">
+      <DependentUpon>SubCategoryTDS2.xsd</DependentUpon>
+    </None>
+    <None Include="DA\SubCategoryTDS2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubCategoryTDS2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\SubCategoryTDS2.xss">
+      <DependentUpon>SubCategoryTDS2.xsd</DependentUpon>
+    </None>
+    <None Include="DA\UserTDS.xsc">
+      <DependentUpon>UserTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\UserTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\UserTDS.xss">
+      <DependentUpon>UserTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\VendorTDS.xsc">
+      <DependentUpon>VendorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\VendorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\VendorTDS.xss">
+      <DependentUpon>VendorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ZipLookupTDS.xsc">
+      <DependentUpon>ZipLookupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DA\ZipLookupTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZipLookupTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DA\ZipLookupTDS.xss">
+      <DependentUpon>ZipLookupTDS.xsd</DependentUpon>
+    </None>
+    <Content Include="ProductSearch.ashx" />
+    <Content Include="LeadSubmission.ashx" />
+    <Content Include="LocateHandler.ashx" />
+    <None Include="development-bundle\demos\autocomplete\search.php" />
+    <None Include="development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.findbomag.www\LeadSender.disco" />
+    <None Include="Web References\com.findbomag.www\LeadSender.wsdl" />
+    <None Include="Web References\com.findbomag.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="plugins\jquery.easing.1.3.js" />
+    <Content Include="plugins\jquery.fitvids.js" />
+    <Content Include="usercontrols\MainCategoryDockMenu.ascx" />
+    <Content Include="usercontrols\MainCategoryUserControl.ascx" />
+    <Content Include="usercontrols\MainCategoryCarouselUserControl.ascx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ZipSearch.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParameterPasser\ParameterPasser.csproj">
+      <Project>{CC53C2FF-9229-46B9-8415-15DCFE10B95C}</Project>
+      <Name>ParameterPasser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZipCodeUtil\ZipCodeUtil.csproj">
+      <Project>{E2CB0201-E4C3-463C-A788-BB25C04C3B47}</Project>
+      <Name>ZipCodeUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.findbomag.com/admin/WebServices/LeadSender.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.findbomag.www\</RelPath>
+      <UpdateFromURL>http://www.findbomag.com/admin/WebServices/LeadSender.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Dealer_Locator_com_findbomag_www_LeadSender</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\DataExport\Data\" />
+    <Folder Include="admin\DataImport\Data\" />
+    <Folder Include="admin\DesktopLead\Data\" />
+    <Folder Include="admin\Reports\TemplateDevelopment\" />
+    <Folder Include="MapData\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51502</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

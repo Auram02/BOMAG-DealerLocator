@@ -1,0 +1,446 @@
+﻿body
+{
+	font-family: "Trebuchet MS" , Arial;
+	font-size: 11px;
+	background-color: #718ba6;
+	text-align:left;
+	margin:0;
+    padding:0;
+}
+
+.AdminForm
+{
+}
+
+.Tabs
+{
+	padding:0px;
+	width:100%;
+}
+
+/* Gridview stuff */
+.gridviewClass_Header
+{
+	background: #3D51AA;
+	color: #FFFFFF;
+}
+.gridviewClass_TableRow
+{
+	background: #D4D7E9;
+	color: #000000;
+}
+
+
+.gridviewClass_TableRowAlternating
+{
+	background: #A3AFD8;
+	color: #000000;
+}
+
+.gridviewClass_TableRowEdit
+{
+	background: #E2BB76;
+}
+
+/* Element Hiders / Showers */
+.hiddencol
+{
+	display: none;
+}
+.viscol
+{
+	display: block;
+}
+
+
+/*  ReOrder List  */
+.callbackStyle
+{
+	border: thin blue inset;
+}
+.callbackStyle table
+{
+	background-color: #cccccc;
+	color: Black;
+}
+.itemArea
+{
+	margin-left: 15px;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+
+/*Reorder List*/
+.dragHandle
+{
+	width: 10px;
+	height: 15px;
+	background-color: #BEC8D1;
+	background-image: url(images/bg-menu-main.png);
+	cursor: move;
+	border: outset thin white;
+}
+
+.reorderListDemo li
+{
+	list-style: none;
+	margin: 2px;
+	background-color: #3D51A8;
+	color: #FFF;
+}
+
+.reorderListDemo li a
+{
+	color: #FFF !important;
+	font-weight: bold;
+}
+
+.reorderCue
+{
+	border: dashed thin black;
+	width: 100%;
+	height: 25px;
+	color: #3D51A8;
+}
+
+/*  table list */
+table.dlT
+{
+	text-align: center;
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	width: 500px;
+	background-color: #fafafa;
+	border: 1px #6699CC solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+td.dlHeader
+{
+	/*border-bottom: 2px solid #6699CC;         border-left: 1px solid #6699CC;*/
+	background-color: #3D50AC;
+	text-align: left;
+	text-indent: 5px;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+td.dlBody
+{
+	border-bottom: 1px solid #9CF;
+	border-top: 0px;
+	border-left: 1px solid #9CF;
+	border-right: 0px;
+	text-align: left;
+	text-indent: 10px;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	background-color: #fafafa;
+}
+
+table.dlsofT
+{
+	text-align: center;
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	width: 580px;
+	background-color: #fafafa;
+	border: 1px #6699CC solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+.headerTable
+{
+	padding-right: 2px;
+}
+
+.headerLink A:link
+{
+	font-size: 12px;
+	color: #000000; /* white */
+	border: solid 1px black;
+	margin: 1px;
+	background-color: #A3AFD8; /* slate-blue / gray-blue */
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none; /* remove underline */
+}
+
+.headerLink A:visited
+{
+	font-size: 12px;
+	color: #000000; /* white */
+	border: solid 1px black;
+	margin: 1px;
+	background-color: #A3AFD8; /* slate-blue / gray-blue */
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none; /* remove underline */
+}
+
+
+
+table.containerTable
+{
+	background-color: #DEDEDE;
+	width: 100%;
+	height: 100px;
+	border: 1px solid black;
+}
+
+/* Navigation Menu header style */
+.navHeader
+{
+	border: 1px solid #2A3B7B;
+	background-color: #3D51AA; /* background-color for link headers...purpleish blue */
+	color: White;
+	padding-left: 5px;
+}
+
+/* Navigation Menu link style */
+.navLink
+{
+	border-bottom: 1px solid #CDCDCD;
+	padding-left: 5px;
+}
+
+.navLink A:link
+{
+	/*color:#0000FF;*/
+	color: #5D6EB8;
+	text-decoration: none;
+}
+
+.navLink A:visited
+{
+	/*color:#0000FF;*/
+	color: #5D6EB8;
+	text-decoration: none;
+}
+
+.navLink A:hover
+{
+	/*color:#0000FF;*/
+	color: #5D6EB8;
+	text-decoration: underline;
+}
+
+
+.navContainer
+{
+}
+
+.contentHeader
+{
+	width: 100%;
+}
+
+.contentContainer
+{
+	border: 1px black solid;
+	padding: 5px 5px 5px 5px;
+}
+
+/* ############################################################################################################
+
+NEW CSS For Re-Skin of Master 
+
+   ############################################################################################################
+*/
+
+.ContentWrapper
+{
+	   position: relative;
+   overflow: hidden;
+   margin: 0px auto;
+   width: 100%;
+}
+.TopMenu
+{
+	float:left;
+	width:100%;
+	z-index:2;
+	border-bottom: 1px solid #909090;
+}
+.colleft{
+   position: relative;
+   width: 100%;
+   right: 85%;
+   background-color: #f8f8f8;
+}
+.Header
+{
+	text-align: left;
+	width:177px;
+}
+
+.Header img
+{
+	padding: 5px;
+}
+
+.LinkSection
+{
+   position: relative;
+   overflow: hidden;
+   float: left;
+   width: 15%;
+   left: 0%;
+}
+
+.ContentSection
+{
+	
+   position: relative;
+   overflow: hidden;
+   float: left;
+   width: 85%;
+   left: 100%;
+}
+
+
+.LinkSection, .ContentSection, .Header, .ContentWrapper
+{
+	background-color: #f8f8f8;
+}
+
+.AdminAccordionMenuHeader
+{
+	background-color: #3d51aa;
+	border: 1px solid #2a3b7b;
+	color: White;
+	height: 20px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+}
+
+.AdminAccordionMenuContent
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.AdminLink
+{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+.AdminLink a
+{
+	text-decoration: none;
+	color: #5d6eb8;
+}
+
+.DisplayInline
+{
+	display: inline;
+	float: left;
+}
+
+.SelectedLink
+{
+	background-color: Red;
+}
+
+
+.accordion
+{
+	z-index:1;
+}
+
+/* Fix for Superfish z-index issue */
+.current
+{
+	z-index:2;
+	background-color: #aaa;
+}
+
+.AccordionHeading
+{
+	margin-top:1px;
+	zoom: 1;
+	cursor:pointer;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	border: #aaaaaa 1px solid;
+	background: url(images/ui-bg_glass_65_ffffff_1x400.png) #ffffff repeat-x 50% 50%;
+	color: #212121;
+	font-weight: bold;
+
+	line-height: 1.3;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	outline-width: 0px;
+	border-width: 0px;
+	font-size: 100%;
+	text-decoration: none;
+	
+}
+
+
+.SubHeader
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom:1px solid #bbb;
+	text-align:left;
+}
+
+.BreadCrumbs
+{
+	padding: 0px 5px;
+	border-right:1px solid #bbb;
+	border-left:1px solid #bbb;
+	width:70%;
+	float:left;
+	display:inline;
+}
+
+.SearchDiv
+{
+	padding: 0px 5px;
+	width:25%;
+	display:inline;
+	float:left;
+}
+
+.SubHeaderSpacer
+{
+	width:5%;
+	display:inline;
+	border-left: 1px solid #bbb;
+	
+	clear:right;
+}
+
+.MainContent
+{
+	text-align:center;
+	border-left: 1px solid #bbb;
+	padding-bottom:10px;
+}

@@ -1,0 +1,4 @@
+﻿.leaflet-marker-icon, .leaflet-marker-shadow, #legend
+{
+    display:none !important;
+}

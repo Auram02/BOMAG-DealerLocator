@@ -1,0 +1,71 @@
+﻿#TMReportWrapper
+{
+    margin: 10px;
+}
+
+.TMReportWrapper
+{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 50%;
+    float: left;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.Title
+{
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#TMListWrapper
+{
+    margin-bottom: 20px;
+}
+
+#TMOverviewReportWrapper
+{
+    margin-bottom: 40px;
+}
+
+.label
+{
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.TMReportButtonWrapper, #TMOverviewReportWrapper
+{
+    margin-top: 10px;
+}
+
+#TMDistributorWrapper2, #TMStatesWrapper1
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#TMProductLinesWrapper2
+{
+    width: 100%;
+}
+
+#TMReportTM, #TMProductLinesWrapper2, #TMReport2GenerateWrapper, #TMMapReport1, #TMMapReport2
+{
+    display: none;
+}
+
+.ui-dialog-titlebar
+{
+    display: none;
+}
+
+#SpinnerWrapper
+{
+    margin-top: 40px;
+    text-align: center;
+}

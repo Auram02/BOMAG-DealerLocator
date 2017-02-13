@@ -1,0 +1,207 @@
+﻿body, html
+{
+    height: 100%;
+    width: 100%;
+}
+
+form
+{
+    height: 100%;
+    width: 100%;
+}
+
+#map
+{
+    height: 900px;
+    width: 900px;
+    /* REVERT 
+            height: 3300px;
+            width: 2550px; */
+    /* height: 100%;
+            width: 50%; */
+}
+
+.leaflet-control-command-interior
+{
+    width: 'auto';
+    height: 'auto';
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
+    cursor: auto;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.legend
+{
+    padding: 7px 7px 7px 7px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    z-index: 1000;
+    /* REVERT
+            width: 30%;
+            font-size: 0.8em;
+            box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
+            */
+    width: 8%;
+    font-size: 4pt;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.map_title
+{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    text-align: center;
+}
+
+#mapHeader
+{
+    margin-left: 12%;
+    top: 5px;
+}
+
+#legendTitle
+{
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+#zoomLevel, #IEMessage
+{
+    font-size: 0.7em;
+    margin-left: 15px;
+}
+
+#IEMessage
+{
+    color: red;
+}
+
+.legendEntry
+{
+    margin: 2px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.legendColor
+{
+    /*  REVERT
+            width: 20px;
+            height: 20px;
+            */
+    width: 8px;
+    height: 8px;
+    border: 1px solid black;
+    float: left;
+    margin-top: 2px;
+}
+
+#ZoomButtonWrapper
+{
+    width: 96%;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #000;
+}
+
+.ZoomButton
+{
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #000;
+    background-color: #CCC;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#ZoomOut
+{
+    border-left: none;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.Overlap
+{
+    border: 1px solid red;
+}
+
+.legendName
+{
+    float: left;
+    margin-left: 5px;
+    font-size: 0.75em;
+}
+
+#StateWrapper
+{
+    font-size: 1.9em;
+    float: left;
+}
+
+#StateDropdown
+{
+    font-size: 0.8em;
+}
+
+#errorWrapper
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.errorEntry
+{
+    font-size: 1.6em;
+    color: Red;
+}
+
+#timeStamp
+{ /*
+            font-size: 1.4em;
+            position: absolute;
+            bottom: 6px;
+            right: 10px;
+            text-align: right;
+           
+            float: right;
+            font-size: 1.4em;
+            margin-top: 6px;
+            text-align: right;
+             */
+    font-size: 0.7em;
+}
+
+#HideDistributors
+{
+    display: none;
+    font-size: 2.0em;
+}
+
+#StateWrapper
+{
+    display: none;
+}
+
+#MapLoading
+{
+    font-size: 2.5em;
+}

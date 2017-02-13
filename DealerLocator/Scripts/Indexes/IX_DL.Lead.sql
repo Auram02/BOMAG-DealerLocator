@@ -1,0 +1,6 @@
+﻿
+/****** Object:  Index [IX_DL.Lead]    Script Date: 02/13/2011 11:14:44 ******/
+CREATE UNIQUE NONCLUSTERED INDEX [IX_DL.Lead] ON [dbo].[DL.Lead] 
+(
+	[pk_leadID] ASC
+)WITH (SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, IGNORE_DUP_KEY = ON, ONLINE = OFF) ON [PRIMARY]

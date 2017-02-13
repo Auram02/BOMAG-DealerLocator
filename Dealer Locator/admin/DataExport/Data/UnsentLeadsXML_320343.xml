@@ -1,0 +1,1500 @@
+<UnsentLeadsExport>
+  <Lead>
+    <Data>
+      <errorOccurred>True</errorOccurred>
+      <errorValue>There was no user email address submitted for this lead.  The CC Lookup for DoNotPlanToBuy may have failed as well
+</errorValue>
+      <pk_leadID>889</pk_leadID>
+      <sendDate>3/3/2011 4:32:59 PM</sendDate>
+      <submitDate>3/3/2011 4:32:59 PM</submitDate>
+      <submitted>False</submitted>
+    </Data>
+    <LeadValue>
+      <elementName>KioskModeHiddenField</elementName>
+      <elementValue>true</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73032</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>FirstName</elementName>
+      <elementValue>Asdf</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73033</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>LastName</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73034</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Company_Agency</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73035</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address1</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73036</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address2</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73037</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73038</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherStateProvince</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73039</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherPostalCode</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73040</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherCountry</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73041</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>COLLEGE HILLS MALL</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73042</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>State</elementName>
+      <elementValue>IL</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73043</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Zip Code</elementName>
+      <elementValue>61761</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73044</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>CountryRegion</elementName>
+      <elementValue>United States</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73045</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Phone</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73046</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Fax</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73047</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Email</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73048</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Plan To Buy</elementName>
+      <elementValue>Immediately</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73049</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>source_css</elementName>
+      <elementValue>Asphalt Contractor</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73050</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Test Multiline Textbox</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73051</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Comments</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73052</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>btnSalesLeadFormHidden</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>889</fk_leadID>
+      <pk_valueID>73053</pk_valueID>
+    </LeadValue>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>=================================
+    BOMAG AMERICAS SALES LEAD
+=================================
+
+Attention: MARTIN EQUIPMENT OF ILLINOIS, INC.
+
+The following lead was submitted on: 3/3/2011
+Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: Asdf
+LastName: asdf
+Company_Agency: asdf
+Address1: asdf
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: COLLEGE HILLS MALL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-40 Series
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>fax@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>3099652711@mhsfax.com</emailTo>
+      <fk_emailType>0</fk_emailType>
+      <fk_leadID>889</fk_leadID>
+      <pk_leadEmailID>13997</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: Asdf
+LastName: asdf
+Company_Agency: asdf
+Address1: asdf
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: COLLEGE HILLS MALL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-40 Series - http://www.bomag.com/ext_resource/americas/heavy/BW213D-40_4pg.pdf
+
+Please contact the distributor below to verify the follow up of this lead.
+
+MARTIN EQUIPMENT OF ILLINOIS, INC.
+400 West Martin Drive
+Goodfield, IL 61742
+
+Phone: (309) 965-2502
+Fax: (309) 965-2711
+
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>1</fk_emailType>
+      <fk_leadID>889</fk_leadID>
+      <pk_leadEmailID>13996</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>
+
+Products Submitted: 
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-40 Series - http://www.bomag.com/ext_resource/americas/heavy/BW213D-40_4pg.pdf
+Source: Asphalt Contractor
+
+Asdf asdf
+asdf
+asdf
+COLLEGE HILLS MALL, IL 61761
+
+Asdf,
+Thank you for your interest in BOMAG SINGLE DRUM ROLLERS products. The information you requested from Asphalt Contractor is enclosed. BOMAG SINGLE DRUM ROLLERS products are at work worldwide, cutting costs and providing maximum return on investment. Quality, in design and manufacture, has resulted in top performance and trouble free operation.
+
+BOMAG SINGLE DRUM ROLLERS equipment is sold and backed by the experienced and trained specialists at:
+
+MARTIN EQUIPMENT OF ILLINOIS, INC.
+400 West Martin Drive
+Goodfield, IL 61742
+(309) 965-2502 Ext: 
+
+This highly qualified distributor can provide additional information for your specific application as well as current prices and delivery data. They also carry a complete stock of parts and maintain a service organization to assure a better bottom line.
+
+If you need more information, please call on MARTIN EQUIPMENT OF ILLINOIS, INC. or call on us directly. You may also visit our website at www.gobomag.com.
+
+Yours very truly,
+
+Dave Dennison
+Manager - Marketing Communications
+&amp; Product Development
+BOMAG Americas, Inc.
+(309) 852-6217
+dave.dennison@bomag.com
+
+Comments: 
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com to Distribution Vendor</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>2</fk_emailType>
+      <fk_leadID>889</fk_leadID>
+      <pk_leadEmailID>13998</pk_leadEmailID>
+    </LeadEmail>
+    <LeadProduct>
+      <distributorID>137</distributorID>
+      <fk_leadID>889</fk_leadID>
+      <fk_MainCatID>11</fk_MainCatID>
+      <fk_ModelID>38</fk_ModelID>
+      <fk_SubCatID>-1</fk_SubCatID>
+      <IsElectronic>False</IsElectronic>
+      <IsMail>True</IsMail>
+      <pk_leadProductID>14352</pk_leadProductID>
+      <territoryManagerID>12</territoryManagerID>
+      <manufacturerdistributorID>-1</manufacturerdistributorID>
+    </LeadProduct>
+  </Lead>
+  <Lead>
+    <Data>
+      <errorOccurred>True</errorOccurred>
+      <errorValue>There was no user email address submitted for this lead.  The CC Lookup for DoNotPlanToBuy may have failed as well
+</errorValue>
+      <pk_leadID>890</pk_leadID>
+      <sendDate>3/3/2011 4:39:10 PM</sendDate>
+      <submitDate>3/3/2011 4:39:10 PM</submitDate>
+      <submitted>False</submitted>
+    </Data>
+    <LeadValue>
+      <elementName>KioskModeHiddenField</elementName>
+      <elementValue>true</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73054</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>FirstName</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73055</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>LastName</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73056</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Company_Agency</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73057</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address1</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73058</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address2</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73059</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73060</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherStateProvince</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73061</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherPostalCode</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73062</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherCountry</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73063</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>COLLEGE HILLS MALL</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73064</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>State</elementName>
+      <elementValue>IL</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73065</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Zip Code</elementName>
+      <elementValue>61761</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73066</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>CountryRegion</elementName>
+      <elementValue>United States</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73067</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Phone</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73068</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Fax</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73069</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Email</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73070</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Plan To Buy</elementName>
+      <elementValue>Immediately</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73071</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>source_css</elementName>
+      <elementValue>Asphalt Contractor</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73072</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Test Multiline Textbox</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73073</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Comments</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73074</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>btnSalesLeadFormHidden</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>890</fk_leadID>
+      <pk_valueID>73075</pk_valueID>
+    </LeadValue>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>=================================
+    BOMAG AMERICAS SALES LEAD
+=================================
+
+Attention: MARTIN EQUIPMENT OF ILLINOIS, INC.
+
+The following lead was submitted on: 3/3/2011
+Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: asdf
+LastName: asdf
+Company_Agency: asdf
+Address1: asdf
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: COLLEGE HILLS MALL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-40 Series        - BW213-4 Series
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>fax@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>3099652711@mhsfax.com</emailTo>
+      <fk_emailType>0</fk_emailType>
+      <fk_leadID>890</fk_leadID>
+      <pk_leadEmailID>14000</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>=================================
+    BOMAG AMERICAS SALES LEAD
+=================================
+
+Attention: CAM ASSOCIATES, LLC
+
+The following lead was submitted on: 3/3/2011
+Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: asdf
+LastName: asdf
+Company_Agency: asdf
+Address1: asdf
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: COLLEGE HILLS MALL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT65/4
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>fax@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>8154855773@mhsfax.com</emailTo>
+      <fk_emailType>0</fk_emailType>
+      <fk_leadID>890</fk_leadID>
+      <pk_leadEmailID>14002</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: asdf
+LastName: asdf
+Company_Agency: asdf
+Address1: asdf
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: COLLEGE HILLS MALL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT65/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+
+Please contact the distributor below to verify the follow up of this lead.
+
+CAM ASSOCIATES, LLC
+5576 Hwy. 50 Suite 8
+Delavan, WI 53115
+
+Phone: (800) 310-0660
+Fax: (815) 485-5773
+
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>1</fk_emailType>
+      <fk_leadID>890</fk_leadID>
+      <pk_leadEmailID>14001</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: asdf
+LastName: asdf
+Company_Agency: asdf
+Address1: asdf
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: COLLEGE HILLS MALL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-40 Series - http://www.bomag.com/ext_resource/americas/heavy/BW213D-40_4pg.pdf
+        - BW213-4 Series - http://www.bomag.com/ext_resource/americas/heavy/BW213-4_4pg.pdf
+
+Please contact the distributor below to verify the follow up of this lead.
+
+MARTIN EQUIPMENT OF ILLINOIS, INC.
+400 West Martin Drive
+Goodfield, IL 61742
+
+Phone: (309) 965-2502
+Fax: (309) 965-2711
+
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>1</fk_emailType>
+      <fk_leadID>890</fk_leadID>
+      <pk_leadEmailID>13999</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>
+
+Products Submitted: 
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-40 Series - http://www.bomag.com/ext_resource/americas/heavy/BW213D-40_4pg.pdf
+Source: Asphalt Contractor
+
+asdf asdf
+asdf
+asdf
+COLLEGE HILLS MALL, IL 61761
+
+asdf,
+Thank you for your interest in BOMAG SINGLE DRUM ROLLERS products. The information you requested from Asphalt Contractor is enclosed. BOMAG SINGLE DRUM ROLLERS products are at work worldwide, cutting costs and providing maximum return on investment. Quality, in design and manufacture, has resulted in top performance and trouble free operation.
+
+BOMAG SINGLE DRUM ROLLERS equipment is sold and backed by the experienced and trained specialists at:
+
+MARTIN EQUIPMENT OF ILLINOIS, INC.
+400 West Martin Drive
+Goodfield, IL 61742
+(309) 965-2502 Ext: 
+
+This highly qualified distributor can provide additional information for your specific application as well as current prices and delivery data. They also carry a complete stock of parts and maintain a service organization to assure a better bottom line.
+
+If you need more information, please call on MARTIN EQUIPMENT OF ILLINOIS, INC. or call on us directly. You may also visit our website at www.gobomag.com.
+
+Yours very truly,
+
+Dave Dennison
+Manager - Marketing Communications
+&amp; Product Development
+BOMAG Americas, Inc.
+(309) 852-6217
+dave.dennison@bomag.com
+
+Comments: 
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com to Distribution Vendor</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>2</fk_emailType>
+      <fk_leadID>890</fk_leadID>
+      <pk_leadEmailID>14003</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>
+
+Products Submitted: 
+
+BOMAG SINGLE DRUM ROLLERS
+        - BW213-4 Series - http://www.bomag.com/ext_resource/americas/heavy/BW213-4_4pg.pdf
+
+BOMAG LIGHT
+    - Tampers
+        - BT65/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+Source: Asphalt Contractor
+
+asdf asdf
+asdf
+asdf
+COLLEGE HILLS MALL, IL 61761
+
+asdf,
+Thank you for your interest in BOMAG SINGLE DRUM ROLLERS and BOMAG LIGHT products. The information you requested from Asphalt Contractor is enclosed. BOMAG SINGLE DRUM ROLLERS and BOMAG LIGHT products are at work worldwide, cutting costs and providing maximum return on investment. Quality, in design and manufacture, has resulted in top performance and trouble free operation.
+
+BOMAG SINGLE DRUM ROLLERS and BOMAG LIGHT equipment is sold and backed by the experienced and trained specialists at:
+
+CAM ASSOCIATES, LLC
+5576 Hwy. 50 Suite 8
+Delavan, WI 53115
+(800) 310-0660 Ext: 
+
+This highly qualified distributor can provide additional information for your specific application as well as current prices and delivery data. They also carry a complete stock of parts and maintain a service organization to assure a better bottom line.
+
+If you need more information, please call on CAM ASSOCIATES, LLC or call on us directly. You may also visit our website at www.gobomag.com.
+
+Yours very truly,
+
+Dave Dennison
+Manager - Marketing Communications
+&amp; Product Development
+BOMAG Americas, Inc.
+(309) 852-6217
+dave.dennison@bomag.com
+
+Comments: 
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com to Distribution Vendor</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>2</fk_emailType>
+      <fk_leadID>890</fk_leadID>
+      <pk_leadEmailID>14004</pk_leadEmailID>
+    </LeadEmail>
+    <LeadProduct>
+      <distributorID>137</distributorID>
+      <fk_leadID>890</fk_leadID>
+      <fk_MainCatID>11</fk_MainCatID>
+      <fk_ModelID>38</fk_ModelID>
+      <fk_SubCatID>-1</fk_SubCatID>
+      <IsElectronic>False</IsElectronic>
+      <IsMail>True</IsMail>
+      <pk_leadProductID>14353</pk_leadProductID>
+      <territoryManagerID>12</territoryManagerID>
+      <manufacturerdistributorID>-1</manufacturerdistributorID>
+    </LeadProduct>
+    <LeadProduct>
+      <distributorID>323</distributorID>
+      <fk_leadID>890</fk_leadID>
+      <fk_MainCatID>11</fk_MainCatID>
+      <fk_ModelID>39</fk_ModelID>
+      <fk_SubCatID>-1</fk_SubCatID>
+      <IsElectronic>False</IsElectronic>
+      <IsMail>True</IsMail>
+      <pk_leadProductID>14354</pk_leadProductID>
+      <territoryManagerID>12</territoryManagerID>
+      <manufacturerdistributorID>-1</manufacturerdistributorID>
+    </LeadProduct>
+    <LeadProduct>
+      <distributorID>323</distributorID>
+      <fk_leadID>890</fk_leadID>
+      <fk_MainCatID>7</fk_MainCatID>
+      <fk_ModelID>10</fk_ModelID>
+      <fk_SubCatID>9</fk_SubCatID>
+      <IsElectronic>False</IsElectronic>
+      <IsMail>True</IsMail>
+      <pk_leadProductID>14355</pk_leadProductID>
+      <territoryManagerID>22</territoryManagerID>
+      <manufacturerdistributorID>-1</manufacturerdistributorID>
+    </LeadProduct>
+  </Lead>
+  <Lead>
+    <Data>
+      <errorOccurred>True</errorOccurred>
+      <errorValue>There was no user email address submitted for this lead.  The CC Lookup for DoNotPlanToBuy may have failed as well
+</errorValue>
+      <pk_leadID>891</pk_leadID>
+      <sendDate>3/3/2011 4:43:40 PM</sendDate>
+      <submitDate>3/3/2011 4:43:40 PM</submitDate>
+      <submitted>False</submitted>
+    </Data>
+    <LeadValue>
+      <elementName>KioskModeHiddenField</elementName>
+      <elementValue>true</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73076</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>FirstName</elementName>
+      <elementValue>adsfasdf</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73077</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>LastName</elementName>
+      <elementValue>adfs</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73078</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Company_Agency</elementName>
+      <elementValue>afds</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73079</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address1</elementName>
+      <elementValue>afd</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73080</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address2</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73081</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73082</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherStateProvince</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73083</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherPostalCode</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73084</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherCountry</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73085</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>HARTFORD</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73086</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>State</elementName>
+      <elementValue>IL</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73087</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Zip Code</elementName>
+      <elementValue>61761</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73088</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>CountryRegion</elementName>
+      <elementValue>United States</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73089</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Phone</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73090</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Fax</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73091</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Email</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73092</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Plan To Buy</elementName>
+      <elementValue>Immediately</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73093</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>source_css</elementName>
+      <elementValue>Asphalt Contractor</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73094</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Test Multiline Textbox</elementName>
+      <elementValue>asdf</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73095</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>9</elementName>
+      <elementValue>on</elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73096</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Comments</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73097</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>btnSalesLeadFormHidden</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>891</fk_leadID>
+      <pk_valueID>73098</pk_valueID>
+    </LeadValue>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>=================================
+    BOMAG AMERICAS SALES LEAD
+=================================
+
+Attention: CAM ASSOCIATES, LLC
+
+The following lead was submitted on: 3/3/2011
+Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: adsfasdf
+LastName: adfs
+Company_Agency: afds
+Address1: afd
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: HARTFORD
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+9: on
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>fax@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>8154855773@mhsfax.com</emailTo>
+      <fk_emailType>0</fk_emailType>
+      <fk_leadID>891</fk_leadID>
+      <pk_leadEmailID>14006</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>Source: Asphalt Contractor
+
+KioskModeHiddenField: true
+FirstName: adsfasdf
+LastName: adfs
+Company_Agency: afds
+Address1: afd
+Address2: 
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: HARTFORD
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: asdf
+Fax: 
+Email: 
+Test Multiline Textbox: asdf
+9: on
+
+Comments: 
+btnSalesLeadFormHidden: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+
+Please contact the distributor below to verify the follow up of this lead.
+
+CAM ASSOCIATES, LLC
+5576 Hwy. 50 Suite 8
+Delavan, WI 53115
+
+Phone: (800) 310-0660
+Fax: (815) 485-5773
+
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>1</fk_emailType>
+      <fk_leadID>891</fk_leadID>
+      <pk_leadEmailID>14005</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>
+
+Products Submitted: 
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+Source: Asphalt Contractor
+
+adsfasdf adfs
+afds
+afd
+HARTFORD, IL 61761
+
+adsfasdf,
+Thank you for your interest in BOMAG LIGHT products. The information you requested from Asphalt Contractor is enclosed. BOMAG LIGHT products are at work worldwide, cutting costs and providing maximum return on investment. Quality, in design and manufacture, has resulted in top performance and trouble free operation.
+
+BOMAG LIGHT equipment is sold and backed by the experienced and trained specialists at:
+
+CAM ASSOCIATES, LLC
+5576 Hwy. 50 Suite 8
+Delavan, WI 53115
+(800) 310-0660 Ext: 
+
+This highly qualified distributor can provide additional information for your specific application as well as current prices and delivery data. They also carry a complete stock of parts and maintain a service organization to assure a better bottom line.
+
+If you need more information, please call on CAM ASSOCIATES, LLC or call on us directly. You may also visit our website at www.gobomag.com.
+
+Yours very truly,
+
+Dave Dennison
+Manager - Marketing Communications
+&amp; Product Development
+BOMAG Americas, Inc.
+(309) 852-6217
+dave.dennison@bomag.com
+
+Comments: 
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com to Distribution Vendor</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>2</fk_emailType>
+      <fk_leadID>891</fk_leadID>
+      <pk_leadEmailID>14007</pk_leadEmailID>
+    </LeadEmail>
+    <LeadProduct>
+      <distributorID>323</distributorID>
+      <fk_leadID>891</fk_leadID>
+      <fk_MainCatID>7</fk_MainCatID>
+      <fk_ModelID>9</fk_ModelID>
+      <fk_SubCatID>9</fk_SubCatID>
+      <IsElectronic>False</IsElectronic>
+      <IsMail>True</IsMail>
+      <pk_leadProductID>14356</pk_leadProductID>
+      <territoryManagerID>22</territoryManagerID>
+      <manufacturerdistributorID>-1</manufacturerdistributorID>
+    </LeadProduct>
+  </Lead>
+  <Lead>
+    <Data>
+      <errorOccurred>False</errorOccurred>
+      <errorValue>
+      </errorValue>
+      <pk_leadID>902</pk_leadID>
+      <sendDate>5/25/2011 11:37:58 PM</sendDate>
+      <submitDate>5/25/2011 11:37:58 PM</submitDate>
+      <submitted>False</submitted>
+    </Data>
+    <LeadValue>
+      <elementName>FirstName</elementName>
+      <elementValue>First</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73331</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>LastName</elementName>
+      <elementValue>Last</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73332</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Company_Agency</elementName>
+      <elementValue>Company</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73333</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address1</elementName>
+      <elementValue>Address 1</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73334</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Address2</elementName>
+      <elementValue>Address 2</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73335</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73336</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherStateProvince</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73337</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherPostalCode</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73338</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>OtherCountry</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73339</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>City</elementName>
+      <elementValue>NORMAL</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73340</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>State</elementName>
+      <elementValue>IL</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73341</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Zip Code</elementName>
+      <elementValue>61761</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73342</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>CountryRegion</elementName>
+      <elementValue>United States</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73343</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Phone</elementName>
+      <elementValue>Phone</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73344</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Fax</elementName>
+      <elementValue>Fax</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73345</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Email</elementName>
+      <elementValue>nwilson@nwilson.org</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73346</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Plan To Buy</elementName>
+      <elementValue>Immediately</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73347</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>source_css</elementName>
+      <elementValue>Asphalt Contractor</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73348</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Test Multiline Textbox</elementName>
+      <elementValue>saf</elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73349</pk_valueID>
+    </LeadValue>
+    <LeadValue>
+      <elementName>Comments</elementName>
+      <elementValue>
+      </elementValue>
+      <fk_leadID>902</fk_leadID>
+      <pk_valueID>73350</pk_valueID>
+    </LeadValue>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>=================================
+    BOMAG AMERICAS SALES LEAD
+=================================
+
+Attention: APCO EQUIPMENT
+
+The following lead was submitted on: 5/25/2011
+Source: Asphalt Contractor
+
+FirstName: First
+LastName: Last
+Company_Agency: Company
+Address1: Address 1
+Address2: Address 2
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: NORMAL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: Phone
+Fax: Fax
+Email: nwilson@nwilson.org
+Test Multiline Textbox: saf
+
+Comments: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>fax@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>8006086479@mhsfax.com</emailTo>
+      <fk_emailType>0</fk_emailType>
+      <fk_leadID>902</fk_leadID>
+      <pk_leadEmailID>14051</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>Source: Asphalt Contractor
+
+FirstName: First
+LastName: Last
+Company_Agency: Company
+Address1: Address 1
+Address2: Address 2
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: NORMAL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: Phone
+Fax: Fax
+Email: nwilson@nwilson.org
+Test Multiline Textbox: saf
+
+Comments: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+
+Please contact the distributor below to verify the follow up of this lead.
+
+BOB HOPPES
+9133 East Carol Way
+Scottsdale, AZ 85260
+
+Phone: (480) 860-4526
+Fax: 8006086479
+
+</emailBody>
+      <emailCC>nwilson@nwilson.org</emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>tim.tiemann@bomag.com</emailTo>
+      <fk_emailType>1</fk_emailType>
+      <fk_leadID>902</fk_leadID>
+      <pk_leadEmailID>14052</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>Source: Asphalt Contractor
+
+FirstName: First
+LastName: Last
+Company_Agency: Company
+Address1: Address 1
+Address2: Address 2
+City: 
+OtherStateProvince: 
+Zip: 
+OtherPostalCode: 
+OtherCountry: 
+City: NORMAL
+State: IL
+Zip: 
+CountryRegion: United States
+Phone: Phone
+Fax: Fax
+Email: nwilson@nwilson.org
+Test Multiline Textbox: saf
+
+Comments: 
+
+The user requested information on the following product model(s)
+
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+
+Please contact the distributor below to verify the follow up of this lead.
+
+APCO EQUIPMENT
+3432 N. 5th Street
+North Las Vegas, NV 89032
+
+Phone: (702) 871-7474
+Fax: 8006086479
+
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>1</fk_emailType>
+      <fk_leadID>902</fk_leadID>
+      <pk_leadEmailID>14050</pk_leadEmailID>
+    </LeadEmail>
+    <LeadEmail>
+      <emailBCC>
+      </emailBCC>
+      <emailBody>
+
+Products Submitted: 
+
+BOMAG LIGHT
+    - Tampers
+        - BT60/4 - http://www.bomag.com/ext_resource/americas/light/BT65_4Y_2pg
+Source: Asphalt Contractor
+
+First Last
+Company
+Address 1
+Address 2
+NORMAL, IL 61761
+
+First,
+Thank you for your interest in BOMAG LIGHT products. The information you requested from Asphalt Contractor is enclosed. BOMAG LIGHT products are at work worldwide, cutting costs and providing maximum return on investment. Quality, in design and manufacture, has resulted in top performance and trouble free operation.
+
+BOMAG LIGHT equipment is sold and backed by the experienced and trained specialists at:
+
+APCO EQUIPMENT
+3432 N. 5th Street
+North Las Vegas, NV 89032
+(702) 871-7474 Ext: 
+
+This highly qualified distributor can provide additional information for your specific application as well as current prices and delivery data. They also carry a complete stock of parts and maintain a service organization to assure a better bottom line.
+
+If you need more information, please call on APCO EQUIPMENT or call on us directly. You may also visit our website at www.gobomag.com.
+
+Yours very truly,
+
+Dave Dennison
+Manager - Marketing Communications
+&amp; Product Development
+BOMAG Americas, Inc.
+(309) 852-6217
+dave.dennison@bomag.com
+
+Comments: 
+</emailBody>
+      <emailCC>
+      </emailCC>
+      <emailFrom>saleslead@findbomag.com</emailFrom>
+      <emailSubject>Sales Lead from FindBomag.com to Distribution Vendor</emailSubject>
+      <emailTo>nwilson@nwilson.org</emailTo>
+      <fk_emailType>2</fk_emailType>
+      <fk_leadID>902</fk_leadID>
+      <pk_leadEmailID>14053</pk_leadEmailID>
+    </LeadEmail>
+    <LeadProduct>
+      <distributorID>36</distributorID>
+      <fk_leadID>902</fk_leadID>
+      <fk_MainCatID>7</fk_MainCatID>
+      <fk_ModelID>9</fk_ModelID>
+      <fk_SubCatID>9</fk_SubCatID>
+      <IsElectronic>False</IsElectronic>
+      <IsMail>True</IsMail>
+      <pk_leadProductID>14376</pk_leadProductID>
+      <territoryManagerID>34</territoryManagerID>
+      <manufacturerdistributorID>449</manufacturerdistributorID>
+    </LeadProduct>
+  </Lead>
+</UnsentLeadsExport>

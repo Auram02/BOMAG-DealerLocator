@@ -1,0 +1,125 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administration.master.cs"
+    Inherits="Dealer_Locator.admin.Administration" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dealer Locator Admin</title>
+    <link rel="Stylesheet" type="text/css" href="/admin/Styles/Base.css" />
+    <script type="text/javascript">
+    </script>
+</head>
+<body style="background-color: #DEDEDE;">
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <div style="vertical-align: text-top;" align="right">
+        <div id="HeaderDiv" class="Header">
+            <img src="/admin/Images/dl_bomag_logo.jpg" alt="Dealer Locator" />
+        </div>
+        <div id="ContentWrapperDiv" class="ContentWrapper">
+            <div id="LinkSectionDiv" class="LinkSection">
+                <asp:UpdatePanel>
+                    <ajax:Accordion ID="AdminAccordianMenu" runat="Server" HeaderCssClass="AdminAccordionMenuHeader"
+                        ContentCssClass="AdminAccordionMenuContent" FadeTransitions="true" TransitionDuration="250"
+                        FramesPerSecond="40" SuppressHeaderPostbacks="true">
+                        <Panes>
+                            <ajax:AccordionPane ID="AdministrationPane" runat="server">
+                                <Header>
+                                    Administration</Header>
+                                <Content>
+                                    <div class="AdminLink" id="MyAccountDiv" runat="server">
+                                        <a href="/admin/Administration/User.aspx">My Account</a>
+                                    </div>
+                                    <div class="AdminLink" id="AccountSetupDiv" runat="server">
+                                        <a href="/admin/Administration/Users.aspx">Account Setup</a>
+                                    </div>
+                                    <div class="AdminLink" id="DistributionSetupDiv" runat="server">
+                                        <a href="/admin/Administration/Vendor.aspx">Distribution Setup</a>
+                                    </div>
+                                </Content>
+                            </ajax:AccordionPane>
+                            <ajax:AccordionPane ID="ImportExportPane" runat="server">
+                                <Header>
+                                    Lead Data</Header>
+                                <Content>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/DataImport/ImportDealerInformation.aspx">Data Import</a>
+                                    </div>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/DataExport/ExcelDownloads.aspx">Data Export</a>
+                                    </div>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/Administration/RemoveLead.aspx">Remove Lead</a>
+                                    </div>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/DesktopLead/ModifyLeadSearch.aspx">Modify Lead</a>
+                                    </div>
+                                </Content>
+                            </ajax:AccordionPane>
+                            <ajax:AccordionPane ID="DevelopmentPane" runat="server">
+                                <Header>
+                                    Development</Header>
+                                <Content>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/Administration/DefaultSalesLeadForm.aspx">Forms</a>
+                                    </div>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/FormDevelopment/ReAssign/ReassignModels.aspx">ReAssign Models</a>
+                                    </div>
+                                </Content>
+                            </ajax:AccordionPane>
+                            <ajax:AccordionPane ID="MarketingPane" runat="server">
+                                <Header>
+                                    Marketing</Header>
+                                <Content>
+                                    <div class="AdminLink" id="GeneralReportsDiv" runat="server">
+                                        <a href="/admin/Reports/GeneralTMReports.aspx">General Reports</a>
+                                    </div>
+                                    <div class="AdminLink" id="TMReportsDiv" runat="server">
+                                        <a href="/admin/Reports/TMReportsDashboard.aspx">TM Reports</a>
+                                    </div>
+                                    <div class="AdminLink" id="PendingLeadsReportDiv" runat="server">
+                                        <a href="/admin/Reports/ViewPendingLeadList.aspx">Pending Leads Report</a>
+                                    </div>
+                                    <div class="AdminLink" id="ErrorReportsDiv" runat="server">
+                                        <a href="/admin/Reports/DistributorCityReport.aspx">Error Reports</a>
+                                    </div>
+                                    <div class="AdminLink" id="FaxBulletinsDiv" runat="server">
+                                        <a href="/admin/Reports/FaxBulletin.aspx">FAX Bulletins</a>
+                                    </div>
+                                </Content>
+                            </ajax:AccordionPane>
+                            <ajax:AccordionPane ID="DesktopLeadPane" runat="server">
+                                <Header>
+                                    Desktop Lead</Header>
+                                <Content>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/DesktopLead/TransferLeads.aspx">Transfer Leads</a>
+                                    </div>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/DesktopLead/SyncDatabases.aspx">Sync with Web</a>
+                                    </div>
+                                    <div class="AdminLink" runat="server">
+                                        <a href="/admin/DesktopLead/MapFields.aspx">Map Fields</a>
+                                    </div>
+                                </Content>
+                            </ajax:AccordionPane>
+                        </Panes>
+                        <HeaderTemplate>
+                            ...</HeaderTemplate>
+                        <ContentTemplate>
+                            ...</ContentTemplate>
+                    </ajax:Accordion>
+                </asp:UpdatePanel>
+            </div>
+            <div id="ContentSectionDiv" class="ContentSection">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+                </asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

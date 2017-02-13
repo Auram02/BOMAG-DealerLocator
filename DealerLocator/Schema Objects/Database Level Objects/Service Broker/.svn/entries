@@ -1,0 +1,49 @@
+10
+
+dir
+52
+svn://arad/Code/Bomag%20Americas/Dealer%20Locator%20(a.k.a.%20Dark%20Llama)/Dealer%20Locator%20-%20VS%202010/DealerLocator/Schema%20Objects/Database%20Level%20Objects/Service%20Broker
+svn://arad
+
+
+
+2011-04-10T19:58:46.511898Z
+9
+Neil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a33ed614-665d-f74f-a540-23e3dbb7b3b6
+
+Contracts
+dir
+
+Routes
+dir
+
+Services
+dir
+
+Remote Service Binding
+dir
+
+Message Types
+dir
+
+Event Notifications
+dir
+
+Broker Priorities
+dir
+

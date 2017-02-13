@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.findbomag.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.findbomag.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Runs all jobs that have not completed yet</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.findbomag.com/">
+      <s:element name="SendLeads">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendLeadsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProcessUploadedLeads">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filePath" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessUploadedLeadsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessUploadedLeadsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadLeads">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadLeadsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadLeadsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendLeadsSoapIn">
+    <wsdl:part name="parameters" element="tns:SendLeads" />
+  </wsdl:message>
+  <wsdl:message name="SendLeadsSoapOut">
+    <wsdl:part name="parameters" element="tns:SendLeadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessUploadedLeadsSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessUploadedLeads" />
+  </wsdl:message>
+  <wsdl:message name="ProcessUploadedLeadsSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessUploadedLeadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadLeadsSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadLeads" />
+  </wsdl:message>
+  <wsdl:message name="UploadLeadsSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadLeadsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LeadSenderSoap">
+    <wsdl:operation name="SendLeads">
+      <wsdl:input message="tns:SendLeadsSoapIn" />
+      <wsdl:output message="tns:SendLeadsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessUploadedLeads">
+      <wsdl:input message="tns:ProcessUploadedLeadsSoapIn" />
+      <wsdl:output message="tns:ProcessUploadedLeadsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadLeads">
+      <wsdl:input message="tns:UploadLeadsSoapIn" />
+      <wsdl:output message="tns:UploadLeadsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LeadSenderSoap" type="tns:LeadSenderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendLeads">
+      <soap:operation soapAction="http://www.findbomag.com/SendLeads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessUploadedLeads">
+      <soap:operation soapAction="http://www.findbomag.com/ProcessUploadedLeads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadLeads">
+      <soap:operation soapAction="http://www.findbomag.com/UploadLeads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LeadSenderSoap12" type="tns:LeadSenderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendLeads">
+      <soap12:operation soapAction="http://www.findbomag.com/SendLeads" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessUploadedLeads">
+      <soap12:operation soapAction="http://www.findbomag.com/ProcessUploadedLeads" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadLeads">
+      <soap12:operation soapAction="http://www.findbomag.com/UploadLeads" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LeadSender">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Runs all jobs that have not completed yet</wsdl:documentation>
+    <wsdl:port name="LeadSenderSoap" binding="tns:LeadSenderSoap">
+      <soap:address location="http://www.findbomag.com/admin/WebServices/LeadSender.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LeadSenderSoap12" binding="tns:LeadSenderSoap12">
+      <soap12:address location="http://www.findbomag.com/admin/WebServices/LeadSender.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

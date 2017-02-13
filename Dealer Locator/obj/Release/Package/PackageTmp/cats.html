@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    
+    <link type="text/css" href="/css/salesleadform.css" media="screen" rel="stylesheet" />
+    <script type="text/javascript" src="/js/jquery-current.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.carouFredSel-6.2.1.js"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+
+
+            $("#cat").carouFredSel(
+                {
+                    auto: false,
+                    prev: "#foo1_prev",
+                    next: "#A1",
+                    pagination: "#foo3_pag",
+                    infinte: false,
+                    circular: false,
+                    items: {
+                        visible: 5
+                    }
+                });
+
+
+        });
+
+    </script>
+    
+</head>
+<body>
+    <div class="image_carousel">
+                <div class="cat" id="cat">
+                    <img src="/images/dock/light-tandem.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/medium-tandem.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/heavy-tandems.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/recycler.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/refuse.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/milling.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/light_equip.png" alt="basketball" width="140" height="140" />
+                    <img src="/images/dock/single-drums.png" alt="basketball" width="140" height="140" />
+
+                </div>
+                <div class="clearfix"></div>
+
+                <a class="prev" id="foo1_next" href="#"><span>old_next</span></a>
+                <a class="next" id="foo1_prev" href="#"><span>prev</span></a>
+                <a class="next" id="A1" href="#"><span>next</span></a>
+                <div class="pagination" id="foo3_pag"></div>
+
+            </div>
+</body>
+</html>

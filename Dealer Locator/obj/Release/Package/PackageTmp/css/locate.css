@@ -1,0 +1,310 @@
+﻿
+/* Tim Tweeks */
+@media all and (max-width: 480px)
+{
+    .StepContent
+    {
+        margin-left: .2em;
+    }
+
+    .ui-tabs .ui-tabs-panel
+    {
+        padding: 1em .75em;
+    }
+
+    #tabs .tab-content, #tabsDistributor .tab-content
+    {
+        max-width: 92%;
+    }
+
+    #ctl00_ContentPlaceHolder1_txtZip
+    {
+        width: 90%;
+    }
+
+    #MainCategory_htmlselect .dd-container, #MainCategory_htmlselect .dd-select
+    {
+        max-width: 75%;
+    }
+
+    ul.dd-options, ul.dd-click-off-close
+    {
+        max-width: 75%;
+    }
+
+    #MainCategory_htmlselect .dd-option-wrapper
+    {
+        display: block;
+        width: 50%;
+        padding-top: 1em;
+        float: right;
+    }
+
+    #RightFooter, #LeftFooter
+    {
+        margin: 0px;
+        float: none;
+    }
+
+    #RightFooter, #LeftFooter
+    {
+        margin-left: 1.2em;
+    }
+}
+
+@media all and (max-width: 800px)
+{
+    .dd-option-text
+    {
+        font-size: 0.8em;
+    }
+
+    #search-distributor-info-wrapper
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #search-manufacturer-rep-wrapper
+    {
+        clear: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #map_canvas
+    {
+        left: -2.0em;
+        margin-bottom: 5px;
+    }
+
+    .StepContent
+    {
+        margin-left: 0.5em;
+        width: 80%;
+    }
+
+    #FindBomagLogo, #FayatGroupLogo
+    {
+        width: 100%;
+    }
+
+        #FindBomagLogo img, #FayatGroupLogo img
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+@media all and (min-width: 801px) and (max-width:1024px)
+{
+
+    .dd-option-text
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media all and (min-width: 801px)
+{
+
+    #search-manufacturer-rep-wrapper
+    {
+        position: relative;
+        float: left;
+        clear: left;
+    }
+
+    #search-distributor-info-wrapper
+    {
+        display: inline;
+        float: left;
+        width: 50%;
+    }
+
+    #map-wrapper
+    {
+        float: right;
+    }
+
+    .StepContent
+    {
+        margin-left: 1.1em;
+    }
+}
+
+@media all and (min-width: 1025px)
+{
+
+    .dd-option-text
+    {
+        font-size: 1.0em;
+    }
+}
+
+#ContentWrapper
+{
+    background-color: #FFF;
+}
+
+.loading-inner
+{
+    margin-top: 13%;
+}
+
+.ProductTypesAccordionHeading
+{
+    background: none;
+    background-image: url('/images/producthelp/help-bar.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.ui-accordion .ui-accordion-header A
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.HelpIcon
+{
+    background: url("/images/question-mark-icon.png") no-repeat scroll 7px 50% transparent;
+}
+
+
+#map_canvas
+{
+    width: 300px;
+    height: 300px;
+}
+
+#DistanceLabel
+{
+    font-weight: bold;
+}
+
+#MoreInformationButtonSection
+{
+    margin-top: 10px;
+    float: left;
+}
+
+.SubCategoryListItem
+{
+    cursor: pointer;
+}
+
+.ui-accordion-content ul
+{
+    padding: 0px;
+}
+
+#LocateHeader
+{
+    margin: 1.50em 0.50em;
+    font-size: 1.40em;
+}
+
+#FindBomagLogo
+{
+    float: left;
+}
+
+
+#FayatGroupLogo
+{
+    float: right;
+}
+
+.dd-option-text
+{
+    vertical-align: middle;
+}
+
+
+#map-wrapper
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 0px;
+}
+
+#distributor-wrapper
+{
+    position: relative;
+}
+
+#grouping-left
+{
+    float: left;
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+
+#grouping-right
+{
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+
+.Step1, .Step2, .Step3, .HelpIcon
+{
+    width: 34px;
+    height: 34px;
+    float: left;
+    display: inline-block;
+}
+
+.Step1
+{
+    background: url("/images/number-1-icon.png") no-repeat scroll 0 0 transparent;
+}
+
+.Step2
+{
+    background: url("/images/number-2-icon.png") no-repeat scroll 0 0 transparent;
+}
+
+.Step3
+{
+    background: url("/images/number-3-icon.png") no-repeat scroll 0 0 transparent;
+}
+
+
+.StepWrapper
+{
+    margin-bottom: 3.0em;
+    float: left;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.StepContent
+{
+    float: left;
+}
+
+.dd-option-wrapper
+{
+    display: inline-block;
+    width: 70%;
+    padding-top: 1.5em;
+}
+
+.dd-option-img-wrapper
+{
+    display: inline-block;
+    float: left;
+    min-height: 64px;
+    min-width: 64px;
+}
+
+.dd-selected .dd-option-wrapper
+{
+}
