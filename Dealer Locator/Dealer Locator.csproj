@@ -24,6 +24,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -859,9 +860,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="DA\GroupdTDS.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="DA\GroupdTDS.cs" />
     <Compile Include="DA\GroupdTDS.Designer.cs">
       <DependentUpon>GroupdTDS.xsd</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -895,9 +894,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="DA\ModelTDS.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="DA\ModelTDS.cs" />
     <Compile Include="DA\ModelTDS.Designer.cs">
       <DependentUpon>ModelTDS.xsd</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -953,9 +950,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="DA\ZipLookupTDS.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="DA\ZipLookupTDS.cs" />
     <Compile Include="DA\ZipLookupTDS.Designer.cs">
       <DependentUpon>ZipLookupTDS.xsd</DependentUpon>
       <DesignTime>True</DesignTime>

@@ -345,7 +345,7 @@
                                 <a href="/admin/DesktopLead/ModifyDeleteLeadGrouping.aspx">Modify / Delete Lead</a>
                             </div>
                         </div>
-                        <div class="AccordionHeading">
+                        <!--<div class="AccordionHeading">
                             <a href="#">Manage Desktop</a>
                         </div>
                         <div>
@@ -355,7 +355,7 @@
                             <div id="ProcessLeadsDiv" class="AdminLink" runat="server">
                                 <a href="/admin/ProcessLeads.aspx">Process Leads</a>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="AccordionHeading">
                             <a href="#">TM Reports</a>
                         </div>

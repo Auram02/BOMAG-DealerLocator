@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dealer Locator", "Dealer Locator\Dealer Locator.csproj", "{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipCodeUtil", "ZipCodeUtil\ZipCodeUtil.csproj", "{E2CB0201-E4C3-463C-A788-BB25C04C3B47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterPasser", "ParameterPasser\ParameterPasser.csproj", "{CC53C2FF-9229-46B9-8415-15DCFE10B95C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DealerLocator", "DealerLocator\DealerLocator.sqlproj", "{C4F58400-8285-4F71-9776-18810B81480A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7F23FA-96CA-409A-8B90-033F6BBF43A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2CB0201-E4C3-463C-A788-BB25C04C3B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2CB0201-E4C3-463C-A788-BB25C04C3B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2CB0201-E4C3-463C-A788-BB25C04C3B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2CB0201-E4C3-463C-A788-BB25C04C3B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC53C2FF-9229-46B9-8415-15DCFE10B95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC53C2FF-9229-46B9-8415-15DCFE10B95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC53C2FF-9229-46B9-8415-15DCFE10B95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC53C2FF-9229-46B9-8415-15DCFE10B95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F58400-8285-4F71-9776-18810B81480A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F58400-8285-4F71-9776-18810B81480A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F58400-8285-4F71-9776-18810B81480A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F58400-8285-4F71-9776-18810B81480A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
