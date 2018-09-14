@@ -353,7 +353,7 @@ namespace SagaraSoftware.ZipCodeUtil
             string strConnString = Globals.sConnectionString;
             string sql;
 
-            sql = "SELECT * FROM [DL.ZipLookup] WHERE [CITY_ALIAS_NAME] = '" + inCity + "' AND STATE = '" + inState + "' ORDER BY ZIP_CODE";
+            sql = "SELECT * FROM [DL.ZipLookup] WHERE [CITY_ALIAS_NAME] = '" + inCity + "' AND STATE = '" + inState + "' AND CITY != 'DHS' ORDER BY ZIP_CODE";
             SqlConnection cn = new SqlConnection(strConnString);
             SqlDataAdapter da = new SqlDataAdapter(sql, cn);
             DataSet ds = new DataSet();
