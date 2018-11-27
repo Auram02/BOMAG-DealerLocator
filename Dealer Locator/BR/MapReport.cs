@@ -533,10 +533,16 @@ namespace Dealer_Locator.BR
 
         public static GroupItem Locate(GroupItem gi, string query)
         {
-            WebRequest request = WebRequest
-               .Create("http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address="
-                  + HttpUtility.UrlEncode(query));
+            string mapsRequestURL = "http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address=";
+            mapsRequestURL += HttpUtility.UrlEncode(query);
+            mapsRequestURL += "&key=AIzaSyDmBMV6z7UGBpk_yqZB23AY53800E5Cb-w";
 
+            //WebRequest request = WebRequest
+            //   .Create("http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address="
+            //      + HttpUtility.UrlEncode(query));
+
+            WebRequest request = WebRequest.Create(mapsRequestURL);
+            
             using (WebResponse response = request.GetResponse())
             {
 
