@@ -535,7 +535,7 @@ namespace Dealer_Locator.BR
         {
             string mapsRequestURL = "http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address=";
             mapsRequestURL += HttpUtility.UrlEncode(query);
-            mapsRequestURL += "&key=AIzaSyDmBMV6z7UGBpk_yqZB23AY53800E5Cb-w";
+            mapsRequestURL += "&key=REFERENCE THIS ELSEWHERE";
 
             //WebRequest request = WebRequest
             //   .Create("http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&address="
