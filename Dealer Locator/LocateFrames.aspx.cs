@@ -13,7 +13,7 @@ using SagaraSoftware.ZipCodeUtil;
 
 namespace Dealer_Locator
 {
-    public partial class locate : System.Web.UI.Page
+    public partial class LocateFrames : System.Web.UI.Page
     {
 
 

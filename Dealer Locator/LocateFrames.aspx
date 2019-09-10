@@ -1,5 +1,5 @@
-<%@ Page Language="C#" MasterPageFile="~/DealerLocator.Master" AutoEventWireup="true"
-    CodeBehind="Locate.aspx.cs" Inherits="Dealer_Locator.LocateFrames" Title="Dealer Locator" %>
+<%@ Page Language="C#" MasterPageFile="~/DealerLocator_Frames.Master" AutoEventWireup="true"
+    CodeBehind="LocateFrames.aspx.cs" Inherits="Dealer_Locator.LocateFrames" Title="Dealer Locator" %>
 
 <%@ Register Src="usercontrols/MainCategoryUserControl.ascx" TagName="MainCategoryUserControl"
     TagPrefix="DL" %>
@@ -72,7 +72,7 @@
         }
 
     </script>
-    <link type="text/css" href="./css/locate.css" rel="stylesheet" />
+    <link type="text/css" href="./css/locateFrames.css" rel="stylesheet" />
     <script language="javascript">
 
         var currentItemIndex = 0;
@@ -344,9 +344,9 @@
                             tabContentHtml += "<div><b>Distributor of BOMAG Americas Product(s):</b></div>";
                             tabContentHtml += "<div>" + distributorOutput.Categories + "</div>";
 
-                            if (i == 0) {
-                                tabContentHtml += '<div id="MoreInformationButtonSection"><div class="graybutton"><input id="btnSalesLeadFormRedirect" class="button blue" type="button" value="More Information" onclick="javascript:Redirect();" /></div></div>';
-                            }
+                            //if (i == 0) {
+                            //    tabContentHtml += '<div id="MoreInformationButtonSection"><div class="graybutton"><input id="btnSalesLeadFormRedirect" class="button blue" type="button" value="More Information" onclick="javascript:Redirect();" /></div></div>';
+                            //}
 
                             tabContentHtml += "</div>";
                             tabContentHtml += "</div>";
@@ -363,6 +363,8 @@
 
                         $("#loader1").addClass('HiddenField');
                         $("#loader2").addClass('HiddenField');
+
+                        window.parent.postMessage(1150);
 
                     });
 
@@ -390,6 +392,10 @@
 
                 });
 
+                window.parent.postMessage(575);
+
+                // 575, 1150
+
             });
 
     </script>
@@ -405,8 +411,7 @@
     <asp:Label ID="ProductCategoryIdSelectedHiddenField" CssClass="ProductCategoryIdSelectedHiddenField HiddenField"
         runat="server" />
     <div id="ContentWrapper">
-        <header id="LocateHeader">Welcome to findbomag.com.  This site will allow you to locate the BOMAG Dealership closest to your location.  Start below by choosing to search by zipcode or city & state.</header>
-        <div id="tabs">
+        <div id="tabs" class="tabs-wrapper">
             <ul>
                 <li class="tab-option" id="ZipTab"><a href="#ZipCodeTab"><span>Zip Code</span></a></li>
                 <li class="tab-option" id="CityTab"><a href="#CityStateTab"><span>City & State</span></a> </li>
@@ -414,13 +419,11 @@
             <div class="tab-content" id="ZipCodeTab">
                 <div class="TabContentWrapper">
                     <div class="Step1EnterLocationDiv StepWrapper">
-                        <div class="StepNumber Step1">
-                        </div>
                         <div class="StepContent">
                             <div class="heading-wrapper">
                                 <div class="heading">
                                     <div class="headingText">
-                                        Enter Zip Code
+                                        1. Enter Zip Code
                                     </div>
                                 </div>
                                 <div class="headingDescription">
@@ -435,13 +438,11 @@
                         </div>
                     </div>
                     <div class="Step2SelectProductDiv StepWrapper">
-                        <div class="StepNumber Step2">
-                        </div>
                         <div class="StepContent">
                             <div class="heading-wrapper">
                                 <div class="heading">
                                     <div class="headingText">
-                                        Select Product
+                                        2. Select Product
                                     </div>
                                 </div>
                                 <div class="headingDescription">
@@ -456,12 +457,11 @@
                     </div>
                     <div class="Step3LocateDiv StepWrapper">
                         <div class="LocateButtonWrapper InlineDiv">
-                            <span class="StepNumber Step3"></span>
                             <div class="StepContent">
                                 <div class="heading-wrapper">
                                     <div class="heading">
                                         <div class="headingText">
-                                            Locate
+                                            3. Locate
                                         </div>
                                     </div>
                                     <div class="headingDescription">
@@ -469,7 +469,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <input class="button blue" type="button" value="Locate" onclick="javascript: LocateDistributor()" />
+                                    <input class="button yellow" type="button" value="Locate" onclick="javascript: LocateDistributor()" />
                                 </div>
                             </div>
                         </div>
@@ -546,7 +546,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <input class="button blue" type="button" value="Locate" onclick="javascript: LocateDistributor()" />
+                                    <input class="button yellow" type="button" value="Locate" onclick="javascript: LocateDistributor()" />
                                 </div>
                             </div>
                         </div>
@@ -574,7 +574,7 @@
         </div>
     </div>
     -->
-        <div id="tabsDistributor">
+        <div id="tabsDistributor" class="tabs-wrapper">
             <ul>
                 <li class="tab-option" id="DistributorHeaderTab"><a href="#DistributorTab"><span>YOUR DISTRIBUTOR</span></a></li>
             </ul>
@@ -665,7 +665,7 @@
             <tr id="LocateButtonRow" runat="server">
                 <td colspan="2" style="height: 14px">
                     <div align="right">
-                        <asp:Button ID="btnLocate" CssClass="button blue" runat="server" Text="Locate" Height="24px" Width="63px"
+                        <asp:Button ID="btnLocate" CssClass="button yellow" runat="server" Text="Locate" Height="24px" Width="63px"
                             OnClick="btnLocate_Click" />
                     </div>
                 </td>

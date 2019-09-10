@@ -979,6 +979,13 @@
     <Compile Include="DealerLocator.Master.designer.cs">
       <DependentUpon>DealerLocator.Master</DependentUpon>
     </Compile>
+    <Compile Include="DealerLocator_Frames.Master.cs">
+      <DependentUpon>DealerLocator_Frames.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerLocator_Frames.Master.designer.cs">
+      <DependentUpon>DealerLocator_Frames.Master</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1021,12 +1028,12 @@
     <Compile Include="LeadSubmission.ashx.cs">
       <DependentUpon>LeadSubmission.ashx</DependentUpon>
     </Compile>
-    <Compile Include="locate.aspx.cs">
-      <DependentUpon>locate.aspx</DependentUpon>
+    <Compile Include="LocateFrames.aspx.cs">
+      <DependentUpon>LocateFrames.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="locate.aspx.designer.cs">
-      <DependentUpon>locate.aspx</DependentUpon>
+    <Compile Include="LocateFrames.aspx.designer.cs">
+      <DependentUpon>LocateFrames.aspx</DependentUpon>
     </Compile>
     <Compile Include="LocateHandler.ashx.cs">
       <DependentUpon>LocateHandler.ashx</DependentUpon>
@@ -1051,11 +1058,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="SalesLeadForm.aspx.cs">
+    <Compile Include="Archive\SalesLeadForm.aspx.cs">
       <DependentUpon>SalesLeadForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SalesLeadForm.aspx.designer.cs">
+    <Compile Include="Archive\SalesLeadForm.aspx.designer.cs">
       <DependentUpon>SalesLeadForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tests\DatabaseSyncTests.cs" />
@@ -1293,9 +1300,11 @@
     <Content Include="css\jqModal.css" />
     <Content Include="css\jquery.bxslider.css" />
     <Content Include="css\jquery.qtip.css" />
+    <Content Include="css\locateFrames.css" />
     <Content Include="css\locate.css" />
     <Content Include="css\LocateResults.css" />
     <Content Include="css\main-ui.css" />
+    <Content Include="css\main-uiFrames.css" />
     <Content Include="css\main-ui_backup.css" />
     <Content Include="css\navDock.css" />
     <Content Include="css\salesleadform.css" />
@@ -1826,10 +1835,12 @@
     <Content Include="js\tabs.min.js" />
     <Content Include="Kiosk.aspx" />
     <Content Include="KioskThankYou.aspx" />
-    <Content Include="locate.aspx" />
+    <Content Include="Locate.aspx" />
+    <Content Include="LocateFrames.aspx" />
     <Content Include="LocateResults.aspx" />
     <Content Include="Location.asmx" />
-    <Content Include="SalesLeadForm.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="Archive\SalesLeadForm.aspx" />
     <Content Include="Scripts\jquery.bgiframe.js" />
     <Content Include="Scripts\jquery.bgiframe.min.js" />
     <Content Include="TestMap.htm" />
@@ -1909,6 +1920,7 @@
     <Content Include="admin\Reports\Data\report_lake_mission.json" />
     <Content Include="admin\Reports\Data\report_california_missinggeo.json" />
     <Content Include="admin\Reports\ReportHandler.ashx" />
+    <Content Include="css\HelveticaNeueBold.eot" />
     <None Include="DA\ContractTDS.xsc">
       <DependentUpon>ContractTDS.xsd</DependentUpon>
     </None>
@@ -2143,6 +2155,7 @@
     <Content Include="ProductSearch.ashx" />
     <Content Include="LeadSubmission.ashx" />
     <Content Include="LocateHandler.ashx" />
+    <Content Include="DealerLocator_Frames.Master" />
     <None Include="development-bundle\demos\autocomplete\search.php" />
     <None Include="development-bundle\demos\tabs\ajax\content3-slow.php" />
     <None Include="development-bundle\demos\tabs\ajax\content4-broken.php" />

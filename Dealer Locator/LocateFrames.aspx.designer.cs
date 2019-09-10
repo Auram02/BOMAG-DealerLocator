@@ -10,7 +10,7 @@
 namespace Dealer_Locator {
     
     
-    public partial class locate {
+    public partial class LocateFrames {
         
         /// <summary>
         /// DockMenuHiddenField control.

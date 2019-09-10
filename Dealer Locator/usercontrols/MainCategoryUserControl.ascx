@@ -15,6 +15,13 @@
 
        $(document).ready(function () {
            //.msDropDown({ roundedCorner: false, visibleRows: 4 });
+          
+
+
+       });
+
+       function pageLoad() {
+
            var ddslick = $('.MainCategory-htmlselect').ddslick({
                selectText: "Product Category",
                onSelected: function (data) {
@@ -31,11 +38,6 @@
            $(".dd-container").each(function () {
                $(this).find('li:first').hide();
            });
-
-
-       });
-
-       function pageLoad() {
 
            $('.dd-option-text').css('line-height', '1em');
            $("ul li label").css('line-height', '1.0em');
